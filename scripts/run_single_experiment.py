@@ -19,7 +19,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")
 
 from src.data.dataset import DeepfakeVideoDataset, create_dataloader
 from src.models.cdtc_net import CDTCNet
-from src.models.baselines.senior_resnet_bilstm import SeniorResNetBiLSTM
+from src.models.baselines.reference_resnet_bilstm import ReferenceResNetBiLSTM
 from src.models.baselines.rgb_only import RGBOnlyModel
 from src.models.baselines.rgb_transformer import RGBTransformerModel
 from src.models.baselines.frequency_only import FrequencyOnlyModel
@@ -118,7 +118,7 @@ class CDTCNetAblationA3(nn.Module):
 def build_model(exp_id: str, freeze_backbone: bool = True):
     """Instantiate the model for the given experiment ID."""
     if exp_id == "EXP-1":
-        return SeniorResNetBiLSTM(pretrained=True, freeze_backbone=freeze_backbone, hidden_dim=256, dropout=0.5), "fft"
+        return ReferenceResNetBiLSTM(pretrained=True, freeze_backbone=freeze_backbone, hidden_dim=256, dropout=0.5), "fft"
     elif exp_id == "EXP-2":
         return RGBOnlyModel(pretrained=True, freeze_backbone=freeze_backbone, feature_dim=256, dropout=0.3), "fft"
     elif exp_id == "EXP-3":

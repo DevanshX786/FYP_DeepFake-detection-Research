@@ -3,8 +3,8 @@ import torch.nn as nn
 import torchvision.models as models
 
 
-class SeniorResNetBiLSTM(nn.Module):
-    """Independent implementation of the Senior Project Baseline: ResNet50 + BiLSTM.
+class ReferenceResNetBiLSTM(nn.Module):
+    """Independent implementation of the Reference Project Baseline: ResNet50 + BiLSTM.
 
     Pipeline:
         Face Crops [B, N, 3, 224, 224]
@@ -21,7 +21,7 @@ class SeniorResNetBiLSTM(nn.Module):
         hidden_dim: int = 256,
         dropout: float = 0.5,
     ):
-        """Initialize SeniorResNetBiLSTM baseline.
+        """Initialize ReferenceResNetBiLSTM baseline.
 
         Args:
             pretrained: Whether to load ImageNet weights for ResNet50.
@@ -85,3 +85,7 @@ class SeniorResNetBiLSTM(nn.Module):
         logits = self.fc(dropped)       # [B, 1]
 
         return logits
+
+
+# Alias for backward compatibility if ever referenced
+SeniorResNetBiLSTM = ReferenceResNetBiLSTM

@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 
 from src.models.cdtc_net import CDTCNet
-from src.models.baselines.senior_resnet_bilstm import SeniorResNetBiLSTM
+from src.models.baselines.reference_resnet_bilstm import ReferenceResNetBiLSTM
 from src.models.baselines.rgb_only import RGBOnlyModel
 from src.models.baselines.rgb_transformer import RGBTransformerModel
 from src.models.baselines.frequency_only import FrequencyOnlyModel
@@ -72,12 +72,12 @@ def run_sanity_checks():
     loss.backward()
     print(f"  CDTC-Net output: {cdtc_out.shape} -> Loss backward successful!")
 
-    # 2. Senior ResNet50 + BiLSTM Baseline
-    print("Testing Senior ResNet50 + BiLSTM baseline...")
-    senior = SeniorResNetBiLSTM(pretrained=False)
-    senior_out = senior(batch_rgb)
-    assert senior_out.shape == (2, 1), f"Expected (2, 1), got {senior_out.shape}"
-    print(f"  Senior baseline output: {senior_out.shape} -> Successful!")
+    # 2. Reference ResNet50 + BiLSTM Baseline
+    print("Testing Reference ResNet50 + BiLSTM baseline...")
+    ref_model = ReferenceResNetBiLSTM(pretrained=False)
+    ref_out = ref_model(batch_rgb)
+    assert ref_out.shape == (2, 1), f"Expected (2, 1), got {ref_out.shape}"
+    print(f"  Reference baseline output: {ref_out.shape} -> Successful!")
 
     # 3. RGB Only Baseline
     print("Testing RGB-Only baseline...")
