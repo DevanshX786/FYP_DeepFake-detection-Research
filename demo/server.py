@@ -77,6 +77,11 @@ class SampleAnalyzeRequest(BaseModel):
     filename: str
 
 
+@app.get("/api/health")
+async def health_check():
+    return {"status": "ok", "service": "CDTC-Net Web Prototype", "port": 8501}
+
+
 @app.get("/", response_class=HTMLResponse)
 async def serve_index():
     index_path = os.path.join(STATIC_DIR, "index.html")
