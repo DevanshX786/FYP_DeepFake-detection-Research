@@ -1,6 +1,6 @@
 {
     "exp_id": "EXP-1",
-    "model_class": "SeniorResNetBiLSTM",
+    "model_class": "ReferenceResNetBiLSTM",
     "freq_method": "fft",
     "seed": 42,
     "epochs": 30,

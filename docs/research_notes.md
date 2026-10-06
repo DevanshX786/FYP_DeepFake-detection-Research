@@ -18,7 +18,7 @@
 4. Preprocessing normalization and statistics are computed independently per sample or derived solely from training sets.
 
 ## Baseline Specifications
-1. **Senior Project Baseline:** Independent implementation of YOLOv8 / face detector + ResNet50 (2048-D) + 1-layer BiLSTM (256 units/dir) + Linear classifier.
+1. **Reference Project Baseline:** Independent implementation of YOLOv8 / face detector + ResNet50 (2048-D) + 1-layer BiLSTM (256 units/dir) + Linear classifier.
 2. **Spatial-Only Baseline:** ConvNeXt-Tiny + Temporal Average Pooling + Linear classifier.
 3. **RGB + Temporal Transformer Baseline:** ConvNeXt-Tiny + Temporal Transformer + Linear classifier.
 4. **Frequency-Only Baseline:** FFT/DCT + Frequency CNN + Temporal Average Pooling + Linear classifier.

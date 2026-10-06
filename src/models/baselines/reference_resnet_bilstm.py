@@ -86,6 +86,3 @@ class ReferenceResNetBiLSTM(nn.Module):
 
         return logits
 
-
-# Alias for backward compatibility if ever referenced
-SeniorResNetBiLSTM = ReferenceResNetBiLSTM

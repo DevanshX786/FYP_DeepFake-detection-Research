@@ -10,7 +10,7 @@ import pandas as pd
 
 from src.data.dataset import DeepfakeVideoDataset, create_dataloader
 from src.data.splits import load_split_dataframe
-from src.models.baselines.senior_resnet_bilstm import SeniorResNetBiLSTM
+from src.models.baselines.reference_resnet_bilstm import ReferenceResNetBiLSTM
 from src.models.baselines.rgb_only import RGBOnlyModel
 from src.models.baselines.rgb_transformer import RGBTransformerModel
 from src.models.baselines.frequency_only import FrequencyOnlyModel
@@ -27,7 +27,7 @@ def main():
         "--model_type",
         type=str,
         required=True,
-        choices=["senior_resnet_bilstm", "rgb_only", "rgb_transformer", "frequency_only"],
+        choices=["reference_resnet_bilstm", "rgb_only", "rgb_transformer", "frequency_only"],
         help="Baseline model type.",
     )
     parser.add_argument("--training_config", type=str, default="configs/training.yaml", help="Path to training config.")
@@ -73,8 +73,8 @@ def main():
     val_loader = create_dataloader(val_dataset, batch_size=batch_size, shuffle=False, num_workers=2)
 
     # Initialize model
-    if args.model_type == "senior_resnet_bilstm":
-        model = SeniorResNetBiLSTM(pretrained=True, hidden_dim=256, dropout=0.5)
+    if args.model_type == "reference_resnet_bilstm":
+        model = ReferenceResNetBiLSTM(pretrained=True, hidden_dim=256, dropout=0.5)
     elif args.model_type == "rgb_only":
         model = RGBOnlyModel(pretrained=True, freeze_backbone=True, feature_dim=256)
     elif args.model_type == "rgb_transformer":

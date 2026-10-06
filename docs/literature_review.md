@@ -9,7 +9,7 @@
 
 ## 1. Executive Summary & Research Gap Verification
 
-The objective of this research is to investigate whether explicitly combining **spatial facial representations (RGB)**, **frequency-domain artifact representations (FFT/DCT)**, **short-term temporal difference modeling**, and **long-range temporal consistency via a Transformer encoder** provides superior detection accuracy and cross-dataset generalization compared to conventional CNN-recurrent architectures (such as the senior project baseline ResNet50 + BiLSTM).
+The objective of this research is to investigate whether explicitly combining **spatial facial representations (RGB)**, **frequency-domain artifact representations (FFT/DCT)**, **short-term temporal difference modeling**, and **long-range temporal consistency via a Transformer encoder** provides superior detection accuracy and cross-dataset generalization compared to conventional CNN-recurrent architectures (such as the Reference project baseline ResNet50 + BiLSTM).
 
 ### Key Findings:
 1. **Spatial CNN / Modern Backbone Detectors:** While early methods (MesoNet, Xception, EfficientNet) established strong in-domain results on FaceForensics++, modern ConvNeXt architectures capture richer hierarchical representations but remain vulnerable to unseen synthesis artifacts when used in isolation.
@@ -30,7 +30,7 @@ The objective of this research is to investigate whether explicitly combining **
 | **Frame-Level Spatial CNNs** | MesoNet (Afchar et al., 2018), Xception (Rossler et al., 2019), EfficientNet (Tan & Le), ConvNeXt (Liu et al., 2022) | High single-frame accuracy, strong feature extractors | Overfit to generator-specific textures; ignore temporal dynamics |
 | **Frequency-Domain Analysis** | F3-Net (Qian et al., 2020), Freq-Detect (Frank et al., 2020), SRM-based forensics | Detects upsampling grid artifacts invisible in spatial RGB | Sensitive to video compression codecs (H.264/H.265 at high QP) |
 | **Dual-Stream Spatial-Frequency** | SPSL (Liu et al., 2021), MFE (Wang et al., 2021) | Fuses complementary texture and spectral clues | Often implemented with heavy static backbones; lacks sequential dynamics |
-| **Recurrent Temporal Forensics** | ResNet50 + BiLSTM (Senior Baseline, 2024), Guera & Delp (2018) | Captures temporal transitions | BiLSTM lacks global attention; prone to forgetting; expensive recurrence |
+| **Recurrent Temporal Forensics** | ResNet50 + BiLSTM (Reference Baseline, 2024), Guera & Delp (2018) | Captures temporal transitions | BiLSTM lacks global attention; prone to forgetting; expensive recurrence |
 | **Transformer / Attention Forensics** | FTCN (Zheng et al., 2021), ICT (Dong et al., 2022), LipForensics (Haliassos et al., 2021) | Global temporal attention, robust sequence representations | High computational demand; often neglects explicit spectral cues |
 | **Proposed CDTC-Net** | ConvNeXt-Tiny + FFT/DCT + Temporal Difference + Transformer | Multimodal (spatial + spectral), explicit difference features, global temporal self-attention | Requires synchronized two-branch frame extraction |
 
@@ -82,7 +82,7 @@ This enables arbitrary pairwise frame comparisons, directly capturing non-local 
 - **RQ2:** Does explicit feature-space frame differencing ($D_t, A_t$) improve sensitivity to temporal synthesis artifacts?
 - **RQ3:** Does cross-domain feature fusion preserve complementary discriminative cues without mutual interference?
 - **RQ4:** Does a lightweight Transformer encoder outperform recurrent BiLSTM modeling in sequence classification?
-- **RQ5:** Does CDTC-Net achieve superior cross-dataset generalization ($\text{FF++} \to \text{Celeb-DF}$) compared to the senior ResNet50 + BiLSTM baseline?
+- **RQ5:** Does CDTC-Net achieve superior cross-dataset generalization ($\text{FF++} \to \text{Celeb-DF}$) compared to the Reference ResNet50 + BiLSTM baseline?
 - **RQ6:** How resilient is the frequency-spatial representation under compression degradation (c23 vs c40)?
 
 ---

@@ -11,7 +11,7 @@ from src.evaluation.evaluate import evaluate_checkpoint
 from src.models.baselines.frequency_only import FrequencyOnlyModel
 from src.models.baselines.rgb_only import RGBOnlyModel
 from src.models.baselines.rgb_transformer import RGBTransformerModel
-from src.models.baselines.senior_resnet_bilstm import SeniorResNetBiLSTM
+from src.models.baselines.reference_resnet_bilstm import ReferenceResNetBiLSTM
 from src.models.cdtc_net import CDTCNet
 
 
@@ -19,8 +19,8 @@ def build_model(model_name: str) -> torch.nn.Module:
     """Build model instance given model identifier."""
     if model_name == "cdtc_net":
         return CDTCNet(pretrained_backbone=False, freeze_rgb_backbone=False)
-    elif model_name == "senior_resnet_bilstm":
-        return SeniorResNetBiLSTM(pretrained=False)
+    elif model_name == "reference_resnet_bilstm":
+        return ReferenceResNetBiLSTM(pretrained=False)
     elif model_name == "rgb_only":
         return RGBOnlyModel(pretrained=False, freeze_backbone=False)
     elif model_name == "rgb_transformer":
@@ -33,7 +33,7 @@ def build_model(model_name: str) -> torch.nn.Module:
 
 def main():
     parser = argparse.ArgumentParser(description="Evaluate deepfake detection model checkpoint.")
-    parser.add_argument("--model_name", type=str, default="cdtc_net", choices=["cdtc_net", "senior_resnet_bilstm", "rgb_only", "rgb_transformer", "frequency_only"])
+    parser.add_argument("--model_name", type=str, default="cdtc_net", choices=["cdtc_net", "reference_resnet_bilstm", "rgb_only", "rgb_transformer", "frequency_only"])
     parser.add_argument("--checkpoint", type=str, required=True, help="Path to .pt checkpoint.")
     parser.add_argument("--test_csv", type=str, required=True, help="Path to test split CSV.")
     parser.add_argument("--output_dir", type=str, default="experiments/evaluation", help="Output directory for metrics and plots.")

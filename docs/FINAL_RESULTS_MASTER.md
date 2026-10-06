@@ -43,7 +43,7 @@
 ## 2. Benchmark Experiments Profile (EXP-1 to EXP-5 V2)
 
 ### EXP-1: ResNet-50 + BiLSTM
-- **Description:** Senior recurrent baseline combining ResNet-50 spatial feature extraction with bidirectional LSTM temporal sequence modeling.
+- **Description:** Reference recurrent baseline combining ResNet-50 spatial feature extraction with bidirectional LSTM temporal sequence modeling.
 - **Training Objective:** Standard Binary Cross-Entropy
 - **Selected Checkpoint:** [Epoch 25](file:///d:/Project/DeepFake Detection_FYP/experiments/exp_1/checkpoints/best_model.pt)
 - **Decision Threshold:** $\tau = 0.50$

@@ -6,9 +6,9 @@
 **Research domain:** Deepfake video detection  
 **Primary objective:** Design, implement, evaluate, and document an independently developed deepfake detector suitable for an academic research paper.
 
-This repository is **not a continuation, fork, renamed version, or direct modification of the senior project**.
+This repository is **not a continuation, fork, renamed version, or direct modification of the reference project**.
 
-The senior project is treated only as:
+The reference project is treated only as:
 1. a reference implementation,
 2. a reproducibility target / baseline where feasible, and
 3. a comparison point in the final research paper.
@@ -30,13 +30,13 @@ This project will investigate that problem through a detector that explicitly co
 - short-term temporal change,
 - and temporal consistency across multiple frames.
 
-The proposed system will **not** use the senior project's ResNet50 + BiLSTM architecture.
+The proposed system will **not** use the reference project's ResNet50 + BiLSTM architecture.
 
 ---
 
 # 2. Reference
 
-The senior project paper is:
+The reference project paper is:
 
 > **“High-Fidelity Deepfake Detection Using a CNN and Bidirectional LSTM Pipeline”**
 
@@ -78,9 +78,9 @@ The reported implementation uses:
 
 The paper reports 86.00% test accuracy and 86.79% F1 on its test setup.
 
-**Important:** the senior paper does not clearly identify the exact source/subset corresponding to its 3,000-video experimental dataset. Therefore, this project must NOT assume that dataset is reproducible.
+**Important:** the reference paper does not clearly identify the exact source/subset corresponding to its 3,000-video experimental dataset. Therefore, this project must NOT assume that dataset is reproducible.
 
-The senior implementation must not be copied and renamed.
+The reference implementation must not be copied and renamed.
 
 ---
 
@@ -215,7 +215,7 @@ Each sampled frame should undergo:
 
 ### Face detector
 
-**Do not use YOLOv8**, because the senior system uses YOLOv8.
+**Do not use YOLOv8**, because the reference system uses YOLOv8.
 
 Use a modern dedicated face detector such as **RetinaFace** or another well-supported pretrained face detector.
 
@@ -543,7 +543,7 @@ This architecture is intentionally different from:
 YOLOv8 → ResNet50 → BiLSTM
 ```
 
-used in the senior project.
+used in the reference project.
 
 ---
 
@@ -841,9 +841,9 @@ The actual local dataset paths must NOT be hard-coded inside Python source files
 
 The project must implement and evaluate multiple baselines.
 
-## Baseline 1 — Senior Architecture
+## Baseline 1 — Reference Architecture
 
-Reproduce the senior architecture as closely as possible:
+Reproduce the reference architecture as closely as possible:
 
 ```text
 Face detection
@@ -856,7 +856,7 @@ This is the primary internal comparison.
 
 It must be implemented independently.
 
-Do NOT copy the senior repository's source code.
+Do NOT copy the reference repository's source code.
 
 ---
 
@@ -1066,7 +1066,7 @@ mixed_precision: true
 seed: 42
 ```
 
-Batch size must NOT be hard-coded to 4 simply because the senior project used 4.
+Batch size must NOT be hard-coded to 4 simply because the reference project used 4.
 
 The batch size should be determined based on GPU memory and documented.
 
@@ -1152,7 +1152,7 @@ deepfake-detection-research/
 │   │   ├── temporal_transformer.py
 │   │   ├── cdtc_net.py
 │   │   └── baselines/
-│   │       ├── senior_resnet_bilstm.py
+│   │       ├── reference_resnet_bilstm.py
 │   │       ├── rgb_only.py
 │   │       ├── rgb_transformer.py
 │   │       └── frequency_only.py
@@ -1367,7 +1367,7 @@ Does cross-domain fusion provide complementary information?
 Does the proposed temporal Transformer improve over recurrent temporal modeling?
 
 ### RQ5
-Does the proposed representation generalize better to Celeb-DF than the senior ResNet50-BiLSTM baseline?
+Does the proposed representation generalize better to Celeb-DF than the reference ResNet50-BiLSTM baseline?
 
 ### RQ6
 Which components contribute most to robustness under compression and dataset shift?
@@ -1505,7 +1505,7 @@ Create visualization samples.
 
 Implement and validate:
 
-1. senior ResNet50-BiLSTM baseline,
+1. reference ResNet50-BiLSTM baseline,
 2. RGB-only baseline,
 3. RGB + Transformer baseline,
 4. frequency-only baseline.
@@ -1594,11 +1594,11 @@ Do not invent experimental results.
 
 ### Rule 6
 
-Do not use the senior repository as a code dependency.
+Do not use the reference repository as a code dependency.
 
 ### Rule 7
 
-Do not copy senior source code.
+Do not copy reference source code.
 
 ### Rule 8
 
@@ -1649,7 +1649,7 @@ The project is considered complete only when:
 - [ ] Temporal difference module works.
 - [ ] Temporal Transformer works.
 - [ ] CDTC-Net trains successfully.
-- [ ] Senior ResNet50-BiLSTM baseline is implemented independently.
+- [ ] Reference ResNet50-BiLSTM baseline is implemented independently.
 - [ ] Other required baselines are implemented.
 - [ ] Ablation study is completed.
 - [ ] FF++ test evaluation is completed.
@@ -1706,9 +1706,9 @@ The final system should be technically strong, independently implemented, reprod
 
 # 44. Reference Material
 
-### Senior paper
+### Reference paper
 
-The senior paper supplied with this project is the reference for the ResNet50 + BiLSTM baseline and must be cited appropriately in the final paper.
+The reference paper supplied with this project is the reference for the ResNet50 + BiLSTM baseline and must be cited appropriately in the final paper.
 
 ### FaceForensics++
 
