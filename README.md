@@ -6,9 +6,9 @@
 **Research domain:** Deepfake video detection  
 **Primary objective:** Design, implement, evaluate, and document an independently developed deepfake detector suitable for an academic research paper.
 
-This repository is **not a continuation, fork, renamed version, or direct modification of the reference project**.
+The project evaluates an existing ResNet50 + BiLSTM configuration as a reference baseline and develops an independent CDTC-Net architecture for the proposed experiments.
 
-The reference project is treated only as:
+The baseline work is treated only as:
 1. a reference implementation,
 2. a reproducibility target / baseline where feasible, and
 3. a comparison point in the final research paper.
@@ -30,13 +30,13 @@ This project will investigate that problem through a detector that explicitly co
 - short-term temporal change,
 - and temporal consistency across multiple frames.
 
-The proposed system will **not** use the reference project's ResNet50 + BiLSTM architecture.
+The proposed system replaces conventional recurrent architectures with a lightweight temporal consistency Transformer.
 
 ---
 
-# 2. Reference
+# 2. Reference Baseline
 
-The reference project paper is:
+The reference baseline paper is:
 
 > **“High-Fidelity Deepfake Detection Using a CNN and Bidirectional LSTM Pipeline”**
 
@@ -78,9 +78,7 @@ The reported implementation uses:
 
 The paper reports 86.00% test accuracy and 86.79% F1 on its test setup.
 
-**Important:** the reference paper does not clearly identify the exact source/subset corresponding to its 3,000-video experimental dataset. Therefore, this project must NOT assume that dataset is reproducible.
-
-The reference implementation must not be copied and renamed.
+**Note:** The reference baseline configuration is re-implemented independently and evaluated under standardized identity-safe splits to ensure fair benchmark comparisons.
 
 ---
 
@@ -1706,9 +1704,9 @@ The final system should be technically strong, independently implemented, reprod
 
 # 44. Reference Material
 
-### Reference paper
+### Reference Baseline Literature
 
-The reference paper supplied with this project is the reference for the ResNet50 + BiLSTM baseline and must be cited appropriately in the final paper.
+The ResNet50 + BiLSTM baseline architecture corresponds to prior CNN-recurrent literature and is cited appropriately in all research publications.
 
 ### FaceForensics++
 

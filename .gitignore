@@ -96,10 +96,11 @@ experiments/**/checkpoints/
 *.wmv
 *.m4v
 
-# Senior reference project
+# Reference baseline local workspaces (strictly excluded)
 senior-deepfake-detection/
 senior_project/
 senior/
+reference_baseline_raw/
 
 # Testing / coverage caches
 .coverage

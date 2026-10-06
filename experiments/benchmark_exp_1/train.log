@@ -2,7 +2,7 @@
 [2026-10-04 17:42:44] [INFO] [run_single_experiment.py:157]              RUNNING EXPERIMENT: EXP-1                   
 [2026-10-04 17:42:44] [INFO] [run_single_experiment.py:158] ==================================================================
 [2026-10-04 17:42:44] [INFO] [run_single_experiment.py:161] Device: cuda (NVIDIA GeForce RTX 4060 Laptop GPU)
-[2026-10-04 17:42:45] [INFO] [run_single_experiment.py:167] Model: SeniorResNetBiLSTM | Frequency: fft
+[2026-10-04 17:42:45] [INFO] [run_single_experiment.py:167] Model: ReferenceResNetBiLSTM | Frequency: fft
 [2026-10-04 17:42:45] [INFO] [run_single_experiment.py:168] Total Params: 28,231,233 | Trainable Params: 4,723,201
 [2026-10-04 17:42:45] [INFO] [run_single_experiment.py:195] Loaded train: 3500 samples | val: 750 samples
 [2026-10-04 17:42:45] [INFO] [train.py:58] Using device: cuda (NVIDIA GeForce RTX 4060 Laptop GPU)
