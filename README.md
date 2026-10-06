@@ -34,7 +34,7 @@ The proposed system will **not** use the senior project's ResNet50 + BiLSTM arch
 
 ---
 
-# 2. Reference / Senior Project
+# 2. Reference
 
 The senior project paper is:
 
