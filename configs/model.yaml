@@ -1,0 +1,51 @@
+# Model Configuration for CDTC-Net (Cross-Domain Temporal Consistency Network)
+model_name: "cdtc_net"
+
+# RGB Branch
+rgb_branch:
+  backbone: "convnext_tiny"
+  pretrained: true
+  freeze_backbone: true  # Can be unfrozen for fine-tuning
+  feature_dim: 256
+  in_channels: 3
+
+# Frequency Branch
+frequency_branch:
+  method: "fft"  # "fft" or "dct"
+  log_scale: true
+  shift_dc: true
+  feature_dim: 256
+  in_channels: 1
+  encoder_channels: [32, 64, 128, 256]
+
+# Cross-Domain Fusion
+fusion:
+  rgb_dim: 256
+  freq_dim: 256
+  output_dim: 256
+  dropout: 0.2
+
+# Temporal Difference Module
+temporal_difference:
+  input_dim: 256
+  diff_dim: 512  # [D_t; A_t] = 256 + 256
+  output_dim: 256
+  dropout: 0.1
+
+# Temporal Consistency Transformer
+temporal_transformer:
+  embed_dim: 256
+  num_heads: 8
+  num_layers: 2
+  feedforward_dim: 512
+  dropout: 0.1
+  max_sequence_length: 32  # 16 frames + 15 diff tokens + 1 CLS token
+  use_cls_token: true
+
+# Classification Head
+classifier:
+  input_dim: 256
+  hidden_dim: 128
+  output_dim: 1  # Binary classification logit
+  dropout: 0.3
+  decision_threshold: 0.5

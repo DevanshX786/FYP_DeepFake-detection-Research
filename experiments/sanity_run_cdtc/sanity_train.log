@@ -1,0 +1,16 @@
+[2026-10-04 14:40:54] [INFO] [run_sanity_training.py:36] Target Compute Device: cuda (NVIDIA GeForce RTX 4060 Laptop GPU)
+[2026-10-04 14:40:54] [INFO] [run_sanity_training.py:56] Deterministic Sanity Train Subset: 50 videos (10/method, 10 Real / 40 Fake)
+[2026-10-04 14:40:54] [INFO] [run_sanity_training.py:57] Deterministic Sanity Val Subset:   25 videos (5/method, 5 Real / 20 Fake)
+[2026-10-04 14:41:32] [INFO] [run_sanity_training.py:93] CDTC-Net Total Parameters: 30,622,977 | Trainable Parameters: 2,804,385
+[2026-10-04 14:41:32] [INFO] [run_sanity_training.py:100] Evaluating Pre-Training (Epoch 0) Baseline Metrics...
+[2026-10-04 14:42:19] [INFO] [run_sanity_training.py:36] Target Compute Device: cuda (NVIDIA GeForce RTX 4060 Laptop GPU)
+[2026-10-04 14:42:19] [INFO] [run_sanity_training.py:56] Deterministic Sanity Train Subset: 50 videos (10/method, 10 Real / 40 Fake)
+[2026-10-04 14:42:19] [INFO] [run_sanity_training.py:57] Deterministic Sanity Val Subset:   25 videos (5/method, 5 Real / 20 Fake)
+[2026-10-04 14:42:20] [INFO] [run_sanity_training.py:93] CDTC-Net Total Parameters: 30,622,977 | Trainable Parameters: 2,804,385
+[2026-10-04 14:42:20] [INFO] [run_sanity_training.py:100] Evaluating Pre-Training (Epoch 0) Baseline Metrics...
+[2026-10-04 14:43:07] [INFO] [run_sanity_training.py:102] Epoch 0 (Initial) | Val Loss: 0.7215 | Val Acc: 0.3600 | Val AUC: 0.4300
+[2026-10-04 14:44:23] [WARNING] [run_sanity_training.py:153] High gradient norm (inf) at Epoch 1 Batch 8
+[2026-10-04 14:45:35] [INFO] [run_sanity_training.py:189] Epoch 01/04 | Train Loss: 0.5291 | Val Loss: 0.5128 | Val Acc: 0.8000 | Val F1: 0.8889 | Val AUC: 0.4300 | Avg Grad Norm: inf | Throughput: 0.48 vids/s
+[2026-10-04 14:47:56] [INFO] [run_sanity_training.py:189] Epoch 02/04 | Train Loss: 0.5612 | Val Loss: 0.5784 | Val Acc: 0.8000 | Val F1: 0.8889 | Val AUC: 0.3300 | Avg Grad Norm: 3.3679 | Throughput: 0.49 vids/s
+[2026-10-04 14:50:19] [INFO] [run_sanity_training.py:189] Epoch 03/04 | Train Loss: 0.5696 | Val Loss: 0.5916 | Val Acc: 0.8000 | Val F1: 0.8889 | Val AUC: 0.3300 | Avg Grad Norm: 3.0652 | Throughput: 0.50 vids/s
+[2026-10-04 14:52:49] [INFO] [run_sanity_training.py:189] Epoch 04/04 | Train Loss: 0.5999 | Val Loss: 0.6457 | Val Acc: 0.8000 | Val F1: 0.8889 | Val AUC: 0.3400 | Avg Grad Norm: 2.7645 | Throughput: 0.47 vids/s

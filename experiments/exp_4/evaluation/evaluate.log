@@ -1,0 +1,10 @@
+[2026-10-04 22:48:53] [INFO] [evaluate.py:52] Loading checkpoint from: experiments/exp_4\checkpoints\best_model.pt
+[2026-10-04 22:48:53] [INFO] [evaluate.py:60] Evaluating EXP-4 on 750 test samples from: data/splits/test.csv
+[2026-10-04 22:55:20] [INFO] [evaluate.py:52] Loading checkpoint from: experiments/exp_4/checkpoints/best_model.pt
+[2026-10-04 22:55:20] [INFO] [evaluate.py:60] Evaluating frequency_only on 750 test samples from: data/splits/test.csv
+[2026-10-04 22:55:46] [INFO] [evaluate.py:104] Test Accuracy: 0.8000
+[2026-10-04 22:55:46] [INFO] [evaluate.py:105] Test Precision: 0.8000
+[2026-10-04 22:55:46] [INFO] [evaluate.py:106] Test Recall:    1.0000
+[2026-10-04 22:55:46] [INFO] [evaluate.py:107] Test F1-score:  0.8889
+[2026-10-04 22:55:46] [INFO] [evaluate.py:108] Test ROC-AUC:   0.6436
+[2026-10-04 22:55:47] [INFO] [evaluate.py:124] Evaluation complete. Artifacts saved to: experiments/exp_4/evaluation

@@ -1,0 +1,35 @@
+{
+    "exp_id": "EXP-2",
+    "model_name": "ConvNeXt RGB Spatial-only",
+    "checkpoint_path": "experiments/exp_2/checkpoints/best_model.pt",
+    "checkpoint_epoch": 22,
+    "test_dataset": "data/splits/celebdf_test.csv",
+    "dataset_name": "Celeb-DF v2 (Zero-Shot)",
+    "overall_metrics": {
+        "accuracy": 0.6640926640926641,
+        "balanced_accuracy": 0.5928783873099801,
+        "precision": 0.7117346938775511,
+        "recall": 0.8205882352941176,
+        "f1": 0.7622950819672131,
+        "roc_auc": 0.6648545935228024,
+        "true_negatives": 65,
+        "false_positives": 113,
+        "false_negatives": 61,
+        "true_positives": 279,
+        "test_loss": 0.7917159193098315
+    },
+    "per_manipulation_method_metrics": {
+        "celeb_synthesis": {
+            "accuracy": 0.6640926640926641,
+            "balanced_accuracy": 0.5928783873099801,
+            "precision": 0.7117346938775511,
+            "recall": 0.8205882352941176,
+            "f1": 0.7622950819672131,
+            "roc_auc": 0.6648545935228024,
+            "true_negatives": 65,
+            "false_positives": 113,
+            "false_negatives": 61,
+            "true_positives": 279
+        }
+    }
+}

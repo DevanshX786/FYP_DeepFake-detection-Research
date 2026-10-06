@@ -1,0 +1,35 @@
+{
+    "exp_id": "ABL-4",
+    "model_name": "CDTC-Net with 2D-DCT",
+    "checkpoint_path": "experiments/abl_4/checkpoints/best_model.pt",
+    "checkpoint_epoch": 10,
+    "test_dataset": "data/splits/celebdf_test.csv",
+    "dataset_name": "Celeb-DF v2 (Zero-Shot)",
+    "overall_metrics": {
+        "accuracy": 0.6891891891891891,
+        "balanced_accuracy": 0.5678288169200265,
+        "precision": 0.6900212314225053,
+        "recall": 0.9558823529411765,
+        "f1": 0.8014796547472256,
+        "roc_auc": 0.7002726371447455,
+        "true_negatives": 32,
+        "false_positives": 146,
+        "false_negatives": 15,
+        "true_positives": 325,
+        "test_loss": 0.6276333960326942
+    },
+    "per_manipulation_method_metrics": {
+        "celeb_synthesis": {
+            "accuracy": 0.6891891891891891,
+            "balanced_accuracy": 0.5678288169200265,
+            "precision": 0.6900212314225053,
+            "recall": 0.9558823529411765,
+            "f1": 0.8014796547472256,
+            "roc_auc": 0.7002726371447455,
+            "true_negatives": 32,
+            "false_positives": 146,
+            "false_negatives": 15,
+            "true_positives": 325
+        }
+    }
+}

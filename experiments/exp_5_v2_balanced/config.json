@@ -1,0 +1,56 @@
+{
+    "exp_id": "EXP-5-V2-BALANCED",
+    "model_class": "CDTCNet",
+    "loss_type": "BCEWithLogitsLoss",
+    "pos_weight": 0.25,
+    "effective_class_weights": {
+        "real_0": 1.0,
+        "fake_1": 0.25
+    },
+    "seed": 42,
+    "epochs": 30,
+    "early_stopping": false,
+    "batch_size": 8,
+    "lr": 0.0001,
+    "weight_decay": 0.01,
+    "betas": [
+        0.9,
+        0.999
+    ],
+    "lr_scheduler": "CosineAnnealingLR",
+    "t_max": 30,
+    "eta_min": 1e-06,
+    "mixed_precision": true,
+    "gradient_clip_val": 1.0,
+    "freeze_backbone": true,
+    "num_frames": 16,
+    "input_resolution": [
+        224,
+        224
+    ],
+    "freq_method": "fft",
+    "device": "cuda",
+    "total_params": 30622977,
+    "trainable_params": 2804385,
+    "train_split": "data/splits/train.csv",
+    "val_split": "data/splits/val.csv",
+    "test_split": "data/splits/test.csv",
+    "cross_dataset_split": "data/splits/celebdf_test.csv",
+    "calibrated_threshold": 0.65,
+    "best_val_epoch": 14,
+    "best_val_auc": 0.7663166666666666,
+    "val_metrics_at_calibrated_threshold": {
+        "threshold": 0.65,
+        "balanced_accuracy": 0.7183333333333333,
+        "accuracy": 0.7053333333333334,
+        "precision": 0.9146608315098468,
+        "recall": 0.6966666666666667,
+        "specificity": 0.74,
+        "f1": 0.7909176915799432,
+        "roc_auc": 0.7663166666666666,
+        "true_negatives": 111.0,
+        "false_positives": 39.0,
+        "false_negatives": 182.0,
+        "true_positives": 418.0
+    }
+}

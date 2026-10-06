@@ -1,0 +1,35 @@
+{
+    "exp_id": "ABL-2",
+    "model_name": "Dual-Domain + Transformer (No Diff)",
+    "checkpoint_path": "experiments/abl_2/checkpoints/best_model.pt",
+    "checkpoint_epoch": 10,
+    "test_dataset": "data/splits/celebdf_test.csv",
+    "dataset_name": "Celeb-DF v2 (Zero-Shot)",
+    "overall_metrics": {
+        "accuracy": 0.7007722007722008,
+        "balanced_accuracy": 0.5900363516192993,
+        "precision": 0.7024070021881839,
+        "recall": 0.9441176470588235,
+        "f1": 0.8055207026348808,
+        "roc_auc": 0.6729676140118969,
+        "true_negatives": 42,
+        "false_positives": 136,
+        "false_negatives": 19,
+        "true_positives": 321,
+        "test_loss": 0.6084275890041042
+    },
+    "per_manipulation_method_metrics": {
+        "celeb_synthesis": {
+            "accuracy": 0.7007722007722008,
+            "balanced_accuracy": 0.5900363516192993,
+            "precision": 0.7024070021881839,
+            "recall": 0.9441176470588235,
+            "f1": 0.8055207026348808,
+            "roc_auc": 0.6729676140118969,
+            "true_negatives": 42,
+            "false_positives": 136,
+            "false_negatives": 19,
+            "true_positives": 321
+        }
+    }
+}

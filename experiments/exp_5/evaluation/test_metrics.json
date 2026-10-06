@@ -1,0 +1,68 @@
+{
+    "model_name": "EXP-5",
+    "checkpoint_path": "experiments/exp_5\\checkpoints\\best_model.pt",
+    "test_dataset": "data/splits/test.csv",
+    "overall_metrics": {
+        "accuracy": 0.8026666666666666,
+        "balanced_accuracy": 0.6316666666666666,
+        "precision": 0.8487654320987654,
+        "recall": 0.9166666666666666,
+        "f1": 0.8814102564102564,
+        "roc_auc": 0.7259055555555556,
+        "true_negatives": 52,
+        "false_positives": 98,
+        "false_negatives": 50,
+        "true_positives": 550,
+        "test_loss": 0.4881023174524307
+    },
+    "per_manipulation_method_metrics": {
+        "deepfakes": {
+            "accuracy": 0.65,
+            "balanced_accuracy": 0.65,
+            "precision": 0.5933609958506224,
+            "recall": 0.9533333333333334,
+            "f1": 0.731457800511509,
+            "roc_auc": 0.7636222222222222,
+            "true_negatives": 52,
+            "false_positives": 98,
+            "false_negatives": 7,
+            "true_positives": 143
+        },
+        "face2face": {
+            "accuracy": 0.6366666666666667,
+            "balanced_accuracy": 0.6366666666666667,
+            "precision": 0.5864978902953587,
+            "recall": 0.9266666666666666,
+            "f1": 0.7183462532299741,
+            "roc_auc": 0.7452222222222222,
+            "true_negatives": 52,
+            "false_positives": 98,
+            "false_negatives": 11,
+            "true_positives": 139
+        },
+        "faceswap": {
+            "accuracy": 0.61,
+            "balanced_accuracy": 0.61,
+            "precision": 0.5720524017467249,
+            "recall": 0.8733333333333333,
+            "f1": 0.6912928759894459,
+            "roc_auc": 0.6841333333333333,
+            "true_negatives": 52,
+            "false_positives": 98,
+            "false_negatives": 19,
+            "true_positives": 131
+        },
+        "neuraltextures": {
+            "accuracy": 0.63,
+            "balanced_accuracy": 0.63,
+            "precision": 0.5829787234042553,
+            "recall": 0.9133333333333333,
+            "f1": 0.7116883116883117,
+            "roc_auc": 0.7106444444444443,
+            "true_negatives": 52,
+            "false_positives": 98,
+            "false_negatives": 13,
+            "true_positives": 137
+        }
+    }
+}

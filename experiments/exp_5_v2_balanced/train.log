@@ -1,0 +1,99 @@
+[2026-10-06 12:37:48] [INFO] [run_v2_balanced_experiment.py:114] ==================================================================
+[2026-10-06 12:37:48] [INFO] [run_v2_balanced_experiment.py:115]        LAUNCHING EXP-5 V2 (CLASS-BALANCED CDTC-NET TRAINING)      
+[2026-10-06 12:37:48] [INFO] [run_v2_balanced_experiment.py:116] ==================================================================
+[2026-10-06 12:37:48] [INFO] [run_v2_balanced_experiment.py:121] Compute Device: cuda (NVIDIA GeForce RTX 4060 Laptop GPU)
+[2026-10-06 12:37:48] [INFO] [run_v2_balanced_experiment.py:134] Train Dataset: Total=3500, REAL=700 (20.00%), FAKE=2800 (80.00%)
+[2026-10-06 12:37:48] [INFO] [run_v2_balanced_experiment.py:135] Class-Balanced BCE pos_weight = 0.2500 (Effective Weight: Real=1.00, Fake=0.25)
+[2026-10-06 12:37:49] [INFO] [run_v2_balanced_experiment.py:150] Architecture: CDTCNet (ConvNeXt-Tiny + 2D-FFT + Fusion + Signed/Abs Diff + 32-token Transformer)
+[2026-10-06 12:37:49] [INFO] [run_v2_balanced_experiment.py:151] Total Params: 30,622,977 | Trainable Params: 2,804,385
+[2026-10-06 12:37:49] [INFO] [run_v2_balanced_experiment.py:213] ------------------------------------------------------------------
+[2026-10-06 12:37:49] [INFO] [run_v2_balanced_experiment.py:214] PRE-TRAINING OPTIMIZATION & GRADIENT SANITY CHECK:
+[2026-10-06 12:38:07] [INFO] [run_v2_balanced_experiment.py:232] Initial Effective Learning Rate: 1.00e-04
+[2026-10-06 12:38:07] [INFO] [run_v2_balanced_experiment.py:233] First Batch Loss (pos_weight=0.25): 0.1672
+[2026-10-06 12:38:07] [INFO] [run_v2_balanced_experiment.py:234] First Batch Loss (unweighted):     0.6686
+[2026-10-06 12:38:07] [INFO] [run_v2_balanced_experiment.py:235] First Batch Initial Gradient Norm: 1.9373
+[2026-10-06 12:38:07] [INFO] [run_v2_balanced_experiment.py:236] Sanity check passed: Gradients are stable and active.
+[2026-10-06 12:38:07] [INFO] [run_v2_balanced_experiment.py:237] ------------------------------------------------------------------
+[2026-10-06 12:38:50] [INFO] [run_v2_balanced_experiment.py:114] ==================================================================
+[2026-10-06 12:38:50] [INFO] [run_v2_balanced_experiment.py:115]        LAUNCHING EXP-5 V2 (CLASS-BALANCED CDTC-NET TRAINING)      
+[2026-10-06 12:38:50] [INFO] [run_v2_balanced_experiment.py:116] ==================================================================
+[2026-10-06 12:38:50] [INFO] [run_v2_balanced_experiment.py:121] Compute Device: cuda (NVIDIA GeForce RTX 4060 Laptop GPU)
+[2026-10-06 12:38:50] [INFO] [run_v2_balanced_experiment.py:134] Train Dataset: Total=3500, REAL=700 (20.00%), FAKE=2800 (80.00%)
+[2026-10-06 12:38:50] [INFO] [run_v2_balanced_experiment.py:135] Class-Balanced BCE pos_weight = 0.2500 (Effective Weight: Real=1.00, Fake=0.25)
+[2026-10-06 12:38:50] [INFO] [run_v2_balanced_experiment.py:150] Architecture: CDTCNet (ConvNeXt-Tiny + 2D-FFT + Fusion + Signed/Abs Diff + 32-token Transformer)
+[2026-10-06 12:38:50] [INFO] [run_v2_balanced_experiment.py:151] Total Params: 30,622,977 | Trainable Params: 2,804,385
+[2026-10-06 12:38:50] [INFO] [run_v2_balanced_experiment.py:213] ------------------------------------------------------------------
+[2026-10-06 12:38:50] [INFO] [run_v2_balanced_experiment.py:214] PRE-TRAINING OPTIMIZATION & GRADIENT SANITY CHECK:
+[2026-10-06 12:39:07] [INFO] [run_v2_balanced_experiment.py:235] Initial Effective Learning Rate: 1.00e-04
+[2026-10-06 12:39:07] [INFO] [run_v2_balanced_experiment.py:236] First Batch Loss (pos_weight=0.25): 0.1672
+[2026-10-06 12:39:07] [INFO] [run_v2_balanced_experiment.py:237] First Batch Loss (unweighted):     0.6686
+[2026-10-06 12:39:07] [INFO] [run_v2_balanced_experiment.py:238] First Batch Initial Gradient Norm: 1.9373
+[2026-10-06 12:39:07] [INFO] [run_v2_balanced_experiment.py:239] Sanity check passed: Gradients are stable and active.
+[2026-10-06 12:39:07] [INFO] [run_v2_balanced_experiment.py:240] ------------------------------------------------------------------
+[2026-10-06 12:41:28] [INFO] [run_v2_balanced_experiment.py:336] Epoch 01/30 | TrainLoss: 0.2842 | ValLoss: 0.2770 | ValAUC: 0.5494 [BEST] | ValBalAcc: 0.5142 | ValSpec: 0.9867 | ValRec: 0.0417 | LR: 9.97e-05 | Time: 137.9s
+[2026-10-06 12:43:31] [INFO] [run_v2_balanced_experiment.py:336] Epoch 02/30 | TrainLoss: 0.2779 | ValLoss: 0.2761 | ValAUC: 0.5589 [BEST] | ValBalAcc: 0.5300 | ValSpec: 0.2400 | ValRec: 0.8200 | LR: 9.89e-05 | Time: 120.8s
+[2026-10-06 12:45:33] [INFO] [run_v2_balanced_experiment.py:336] Epoch 03/30 | TrainLoss: 0.2779 | ValLoss: 0.2761 | ValAUC: 0.5714 [BEST] | ValBalAcc: 0.5500 | ValSpec: 0.3067 | ValRec: 0.7933 | LR: 9.76e-05 | Time: 121.2s
+[2026-10-06 12:47:36] [INFO] [run_v2_balanced_experiment.py:336] Epoch 04/30 | TrainLoss: 0.2777 | ValLoss: 0.2736 | ValAUC: 0.6330 [BEST] | ValBalAcc: 0.5475 | ValSpec: 0.2667 | ValRec: 0.8283 | LR: 9.57e-05 | Time: 121.5s
+[2026-10-06 12:49:38] [INFO] [run_v2_balanced_experiment.py:336] Epoch 05/30 | TrainLoss: 0.2764 | ValLoss: 0.2780 | ValAUC: 0.5648  | ValBalAcc: 0.5000 | ValSpec: 1.0000 | ValRec: 0.0000 | LR: 9.34e-05 | Time: 121.5s
+[2026-10-06 12:51:40] [INFO] [run_v2_balanced_experiment.py:336] Epoch 06/30 | TrainLoss: 0.2745 | ValLoss: 0.2712 | ValAUC: 0.6802 [BEST] | ValBalAcc: 0.5592 | ValSpec: 0.9800 | ValRec: 0.1383 | LR: 9.05e-05 | Time: 121.7s
+[2026-10-06 12:53:40] [INFO] [run_v2_balanced_experiment.py:336] Epoch 07/30 | TrainLoss: 0.2717 | ValLoss: 0.2521 | ValAUC: 0.7180 [BEST] | ValBalAcc: 0.6450 | ValSpec: 0.6067 | ValRec: 0.6833 | LR: 8.73e-05 | Time: 119.3s
+[2026-10-06 12:55:40] [INFO] [run_v2_balanced_experiment.py:336] Epoch 08/30 | TrainLoss: 0.2614 | ValLoss: 0.2417 | ValAUC: 0.7472 [BEST] | ValBalAcc: 0.6692 | ValSpec: 0.6667 | ValRec: 0.6717 | LR: 8.36e-05 | Time: 119.5s
+[2026-10-06 12:57:40] [INFO] [run_v2_balanced_experiment.py:336] Epoch 09/30 | TrainLoss: 0.2533 | ValLoss: 0.2512 | ValAUC: 0.7348  | ValBalAcc: 0.6450 | ValSpec: 0.3933 | ValRec: 0.8967 | LR: 7.96e-05 | Time: 119.6s
+[2026-10-06 12:59:40] [INFO] [run_v2_balanced_experiment.py:336] Epoch 10/30 | TrainLoss: 0.2426 | ValLoss: 0.2425 | ValAUC: 0.7481 [BEST] | ValBalAcc: 0.6783 | ValSpec: 0.6800 | ValRec: 0.6767 | LR: 7.52e-05 | Time: 119.8s
+[2026-10-06 13:01:40] [INFO] [run_v2_balanced_experiment.py:336] Epoch 11/30 | TrainLoss: 0.2378 | ValLoss: 0.2661 | ValAUC: 0.7529 [BEST] | ValBalAcc: 0.6617 | ValSpec: 0.5333 | ValRec: 0.7900 | LR: 7.06e-05 | Time: 119.6s
+[2026-10-06 13:03:40] [INFO] [run_v2_balanced_experiment.py:336] Epoch 12/30 | TrainLoss: 0.2327 | ValLoss: 0.2937 | ValAUC: 0.7399  | ValBalAcc: 0.6417 | ValSpec: 0.3600 | ValRec: 0.9233 | LR: 6.58e-05 | Time: 119.9s
+[2026-10-06 13:05:40] [INFO] [run_v2_balanced_experiment.py:336] Epoch 13/30 | TrainLoss: 0.2279 | ValLoss: 0.2494 | ValAUC: 0.7575 [BEST] | ValBalAcc: 0.6817 | ValSpec: 0.7467 | ValRec: 0.6167 | LR: 6.08e-05 | Time: 119.7s
+[2026-10-06 13:07:41] [INFO] [run_v2_balanced_experiment.py:336] Epoch 14/30 | TrainLoss: 0.2189 | ValLoss: 0.2544 | ValAUC: 0.7663 [BEST] | ValBalAcc: 0.6983 | ValSpec: 0.6333 | ValRec: 0.7633 | LR: 5.57e-05 | Time: 119.9s
+[2026-10-06 13:09:41] [INFO] [run_v2_balanced_experiment.py:336] Epoch 15/30 | TrainLoss: 0.2171 | ValLoss: 0.2840 | ValAUC: 0.7554  | ValBalAcc: 0.6692 | ValSpec: 0.4733 | ValRec: 0.8650 | LR: 5.05e-05 | Time: 120.0s
+[2026-10-06 13:11:41] [INFO] [run_v2_balanced_experiment.py:336] Epoch 16/30 | TrainLoss: 0.2041 | ValLoss: 0.2890 | ValAUC: 0.7628  | ValBalAcc: 0.7017 | ValSpec: 0.6533 | ValRec: 0.7500 | LR: 4.53e-05 | Time: 119.6s
+[2026-10-06 13:13:41] [INFO] [run_v2_balanced_experiment.py:336] Epoch 17/30 | TrainLoss: 0.2000 | ValLoss: 0.2935 | ValAUC: 0.7558  | ValBalAcc: 0.6750 | ValSpec: 0.5000 | ValRec: 0.8500 | LR: 4.02e-05 | Time: 119.9s
+[2026-10-06 13:15:43] [INFO] [run_v2_balanced_experiment.py:336] Epoch 18/30 | TrainLoss: 0.2030 | ValLoss: 0.2760 | ValAUC: 0.7585  | ValBalAcc: 0.7000 | ValSpec: 0.6333 | ValRec: 0.7667 | LR: 3.52e-05 | Time: 121.6s
+[2026-10-06 13:17:45] [INFO] [run_v2_balanced_experiment.py:336] Epoch 19/30 | TrainLoss: 0.1935 | ValLoss: 0.2895 | ValAUC: 0.7504  | ValBalAcc: 0.6792 | ValSpec: 0.5200 | ValRec: 0.8383 | LR: 3.04e-05 | Time: 122.0s
+[2026-10-06 13:19:48] [INFO] [run_v2_balanced_experiment.py:336] Epoch 20/30 | TrainLoss: 0.1894 | ValLoss: 0.3134 | ValAUC: 0.7581  | ValBalAcc: 0.7050 | ValSpec: 0.6267 | ValRec: 0.7833 | LR: 2.58e-05 | Time: 121.9s
+[2026-10-06 13:21:49] [INFO] [run_v2_balanced_experiment.py:336] Epoch 21/30 | TrainLoss: 0.1857 | ValLoss: 0.3399 | ValAUC: 0.7504  | ValBalAcc: 0.6842 | ValSpec: 0.5867 | ValRec: 0.7817 | LR: 2.14e-05 | Time: 120.7s
+[2026-10-06 13:23:51] [INFO] [run_v2_balanced_experiment.py:336] Epoch 22/30 | TrainLoss: 0.1810 | ValLoss: 0.3957 | ValAUC: 0.7555  | ValBalAcc: 0.6583 | ValSpec: 0.4933 | ValRec: 0.8233 | LR: 1.74e-05 | Time: 122.0s
+[2026-10-06 13:25:52] [INFO] [run_v2_balanced_experiment.py:336] Epoch 23/30 | TrainLoss: 0.1750 | ValLoss: 0.3605 | ValAUC: 0.7473  | ValBalAcc: 0.6883 | ValSpec: 0.6200 | ValRec: 0.7567 | LR: 1.37e-05 | Time: 121.0s
+[2026-10-06 13:27:52] [INFO] [run_v2_balanced_experiment.py:336] Epoch 24/30 | TrainLoss: 0.1754 | ValLoss: 0.4057 | ValAUC: 0.7487  | ValBalAcc: 0.6817 | ValSpec: 0.5600 | ValRec: 0.8033 | LR: 1.05e-05 | Time: 119.7s
+[2026-10-06 13:29:52] [INFO] [run_v2_balanced_experiment.py:336] Epoch 25/30 | TrainLoss: 0.1586 | ValLoss: 0.4291 | ValAUC: 0.7504  | ValBalAcc: 0.6992 | ValSpec: 0.5667 | ValRec: 0.8317 | LR: 7.63e-06 | Time: 119.8s
+[2026-10-06 13:31:53] [INFO] [run_v2_balanced_experiment.py:336] Epoch 26/30 | TrainLoss: 0.1628 | ValLoss: 0.4563 | ValAUC: 0.7470  | ValBalAcc: 0.6775 | ValSpec: 0.5267 | ValRec: 0.8283 | LR: 5.28e-06 | Time: 120.0s
+[2026-10-06 13:33:53] [INFO] [run_v2_balanced_experiment.py:336] Epoch 27/30 | TrainLoss: 0.1634 | ValLoss: 0.4819 | ValAUC: 0.7391  | ValBalAcc: 0.6683 | ValSpec: 0.5000 | ValRec: 0.8367 | LR: 3.42e-06 | Time: 120.0s
+[2026-10-06 13:35:53] [INFO] [run_v2_balanced_experiment.py:336] Epoch 28/30 | TrainLoss: 0.1607 | ValLoss: 0.4498 | ValAUC: 0.7510  | ValBalAcc: 0.6967 | ValSpec: 0.6200 | ValRec: 0.7733 | LR: 2.08e-06 | Time: 120.2s
+[2026-10-06 13:37:54] [INFO] [run_v2_balanced_experiment.py:336] Epoch 29/30 | TrainLoss: 0.1560 | ValLoss: 0.4617 | ValAUC: 0.7497  | ValBalAcc: 0.6892 | ValSpec: 0.5733 | ValRec: 0.8050 | LR: 1.27e-06 | Time: 119.8s
+[2026-10-06 13:39:54] [INFO] [run_v2_balanced_experiment.py:336] Epoch 30/30 | TrainLoss: 0.1487 | ValLoss: 0.4636 | ValAUC: 0.7487  | ValBalAcc: 0.6892 | ValSpec: 0.5733 | ValRec: 0.8050 | LR: 1.00e-06 | Time: 120.0s
+[2026-10-06 13:39:54] [INFO] [run_v2_balanced_experiment.py:369] ==================================================================
+[2026-10-06 13:39:54] [INFO] [run_v2_balanced_experiment.py:370]  30-EPOCH TRAINING COMPLETE. Total Duration: 60.78 min
+[2026-10-06 13:39:54] [INFO] [run_v2_balanced_experiment.py:371]  Best Validation ROC-AUC: 0.7663 achieved at Epoch 14
+[2026-10-06 13:39:54] [INFO] [run_v2_balanced_experiment.py:372] ==================================================================
+[2026-10-06 13:39:55] [INFO] [run_v2_balanced_experiment.py:390] ------------------------------------------------------------------
+[2026-10-06 13:39:55] [INFO] [run_v2_balanced_experiment.py:391] VALIDATION THRESHOLD CALIBRATION (SWEEPING 99 THRESHOLDS ON VAL SPLIT)
+[2026-10-06 13:40:13] [INFO] [run_v2_balanced_experiment.py:409] Top 5 Validation Thresholds by Balanced Accuracy:
+ threshold  balanced_accuracy  specificity   recall       f1
+      0.65           0.718333     0.740000 0.696667 0.790918
+      0.68           0.718333     0.760000 0.676667 0.779271
+      0.69           0.716667     0.766667 0.666667 0.772947
+      0.67           0.715833     0.746667 0.685000 0.783603
+      0.66           0.713333     0.740000 0.686667 0.784015
+[2026-10-06 13:40:13] [INFO] [run_v2_balanced_experiment.py:410] SELECTED OPTIMAL THRESHOLD: tau* = 0.6500
+[2026-10-06 13:40:13] [INFO] [run_v2_balanced_experiment.py:411] Validation Balanced Accuracy at tau*: 0.7183
+[2026-10-06 13:40:13] [INFO] [run_v2_balanced_experiment.py:412] Validation Specificity at tau*:       0.7400
+[2026-10-06 13:40:13] [INFO] [run_v2_balanced_experiment.py:413] Validation Recall at tau*:            0.6967
+[2026-10-06 13:40:13] [INFO] [run_v2_balanced_experiment.py:414] Validation F1 at tau*:                0.7909
+[2026-10-06 13:40:13] [INFO] [run_v2_balanced_experiment.py:415] ------------------------------------------------------------------
+[2026-10-06 13:40:13] [INFO] [run_v2_balanced_experiment.py:426] ------------------------------------------------------------------
+[2026-10-06 13:40:13] [INFO] [run_v2_balanced_experiment.py:427] EVALUATING BEST MODEL ON FF++ TEST SPLIT AT FROZEN tau* = 0.6500
+[2026-10-06 13:40:48] [INFO] [run_v2_balanced_experiment.py:451] FF++ Test Accuracy:          0.6427
+[2026-10-06 13:40:48] [INFO] [run_v2_balanced_experiment.py:452] FF++ Test Balanced Accuracy: 0.6417
+[2026-10-06 13:40:48] [INFO] [run_v2_balanced_experiment.py:453] FF++ Test Precision:         0.8773
+[2026-10-06 13:40:48] [INFO] [run_v2_balanced_experiment.py:454] FF++ Test Recall:            0.6433
+[2026-10-06 13:40:48] [INFO] [run_v2_balanced_experiment.py:455] FF++ Test Specificity:       0.6400
+[2026-10-06 13:40:48] [INFO] [run_v2_balanced_experiment.py:456] FF++ Test F1-Score:          0.7423
+[2026-10-06 13:40:48] [INFO] [run_v2_balanced_experiment.py:457] FF++ Test ROC-AUC:           0.7012
+[2026-10-06 13:40:48] [INFO] [run_v2_balanced_experiment.py:458] FF++ Test Confusion Matrix:  TN=96, FP=54, FN=214, TP=386
+[2026-10-06 13:40:48] [INFO] [run_v2_balanced_experiment.py:459] ------------------------------------------------------------------
+[2026-10-06 13:41:06] [INFO] [run_v2_balanced_experiment.py:532] PROBABILITY DISTRIBUTION STATISTICS:
+[2026-10-06 13:41:06] [INFO] [run_v2_balanced_experiment.py:533]  Val Real P(fake): Mean=0.3742, Median=0.2316
+[2026-10-06 13:41:06] [INFO] [run_v2_balanced_experiment.py:534]  Val Fake P(fake): Mean=0.6879, Median=0.8159
+[2026-10-06 13:41:06] [INFO] [run_v2_balanced_experiment.py:535]  Test Real P(fake): Mean=0.4126, Median=0.2970
+[2026-10-06 13:41:06] [INFO] [run_v2_balanced_experiment.py:536]  Test Fake P(fake): Mean=0.6470, Median=0.8035
+[2026-10-06 13:41:06] [INFO] [run_v2_balanced_experiment.py:539] ------------------------------------------------------------------
+[2026-10-06 13:41:06] [INFO] [run_v2_balanced_experiment.py:540] ZERO-SHOT CROSS-DATASET EVALUATION ON CELEB-DF V2 AT tau* = 0.6500

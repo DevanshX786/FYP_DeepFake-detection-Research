@@ -1,0 +1,20 @@
+[2026-10-04 17:42:44] [INFO] [run_single_experiment.py:156] ==================================================================
+[2026-10-04 17:42:44] [INFO] [run_single_experiment.py:157]              RUNNING EXPERIMENT: EXP-2                   
+[2026-10-04 17:42:44] [INFO] [run_single_experiment.py:158] ==================================================================
+[2026-10-04 17:42:44] [INFO] [run_single_experiment.py:161] Device: cuda (NVIDIA GeForce RTX 4060 Laptop GPU)
+[2026-10-04 17:42:45] [INFO] [run_single_experiment.py:167] Model: RGBOnlyModel | Frequency: fft
+[2026-10-04 17:42:45] [INFO] [run_single_experiment.py:168] Total Params: 28,048,993 | Trainable Params: 230,401
+[2026-10-04 17:42:45] [INFO] [run_single_experiment.py:195] Loaded train: 3500 samples | val: 750 samples
+[2026-10-04 17:42:45] [INFO] [train.py:58] Using device: cuda (NVIDIA GeForce RTX 4060 Laptop GPU)
+[2026-10-04 17:42:45] [INFO] [train.py:59] Starting training for 1 epochs on 3500 train samples, 750 val samples.
+[2026-10-04 17:51:35] [INFO] [train.py:123] Epoch 01/01 | Train Loss: 0.5114 | Val Loss: 0.4960 | Val Acc: 0.8000 | Val Bal Acc: 0.5000 | Val F1: 0.8889 | Val AUC: 0.5923 | LR: 1.00e-06 | Time: 530.3s
+[2026-10-04 17:51:36] [INFO] [train.py:169] Training completed. Best Val AUC: 0.5923
+[2026-10-04 17:53:12] [INFO] [run_single_experiment.py:258] ==================================================================
+[2026-10-04 17:53:12] [INFO] [run_single_experiment.py:259]          EXPERIMENT EXP-2 COMPLETED SUCCESSFULLY          
+[2026-10-04 17:53:12] [INFO] [run_single_experiment.py:260]  Test Accuracy:         0.8000
+[2026-10-04 17:53:12] [INFO] [run_single_experiment.py:261]  Test Balanced Accuracy:0.5000
+[2026-10-04 17:53:12] [INFO] [run_single_experiment.py:262]  Test Precision:        0.8000
+[2026-10-04 17:53:12] [INFO] [run_single_experiment.py:263]  Test Recall:           1.0000
+[2026-10-04 17:53:12] [INFO] [run_single_experiment.py:264]  Test F1-Score:         0.8889
+[2026-10-04 17:53:12] [INFO] [run_single_experiment.py:265]  Test ROC-AUC:          0.5883
+[2026-10-04 17:53:12] [INFO] [run_single_experiment.py:266] ==================================================================

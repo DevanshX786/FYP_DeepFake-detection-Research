@@ -1,0 +1,35 @@
+{
+    "exp_id": "EXP-5",
+    "model_name": "Full Proposed CDTC-Net",
+    "checkpoint_path": "experiments/exp_5/checkpoints/best_model.pt",
+    "checkpoint_epoch": 11,
+    "test_dataset": "data/splits/celebdf_test.csv",
+    "dataset_name": "Celeb-DF v2 (Zero-Shot)",
+    "overall_metrics": {
+        "accuracy": 0.6795366795366795,
+        "balanced_accuracy": 0.5470918704560476,
+        "precision": 0.6790123456790124,
+        "recall": 0.9705882352941176,
+        "f1": 0.7990314769975787,
+        "roc_auc": 0.6719844679444812,
+        "true_negatives": 22,
+        "false_positives": 156,
+        "false_negatives": 10,
+        "true_positives": 330,
+        "test_loss": 0.768387150407758
+    },
+    "per_manipulation_method_metrics": {
+        "celeb_synthesis": {
+            "accuracy": 0.6795366795366795,
+            "balanced_accuracy": 0.5470918704560476,
+            "precision": 0.6790123456790124,
+            "recall": 0.9705882352941176,
+            "f1": 0.7990314769975787,
+            "roc_auc": 0.6719844679444812,
+            "true_negatives": 22,
+            "false_positives": 156,
+            "false_negatives": 10,
+            "true_positives": 330
+        }
+    }
+}

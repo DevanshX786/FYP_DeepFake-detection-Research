@@ -1,0 +1,44 @@
+[2026-10-05 00:10:15] [INFO] [run_single_experiment.py:162] ==================================================================
+[2026-10-05 00:10:15] [INFO] [run_single_experiment.py:163]              RUNNING EXPERIMENT: ABL-2                   
+[2026-10-05 00:10:15] [INFO] [run_single_experiment.py:164] ==================================================================
+[2026-10-05 00:10:15] [INFO] [run_single_experiment.py:167] Device: cuda (NVIDIA GeForce RTX 4060 Laptop GPU)
+[2026-10-05 00:10:16] [INFO] [run_single_experiment.py:173] Model: CDTCNetAblationA2 | Frequency: fft
+[2026-10-05 00:10:16] [INFO] [run_single_experiment.py:174] Total Params: 30,491,137 | Trainable Params: 2,672,545
+[2026-10-05 00:10:16] [INFO] [run_single_experiment.py:201] Loaded train: 3500 samples | val: 750 samples
+[2026-10-05 00:10:16] [INFO] [train.py:58] Using device: cuda (NVIDIA GeForce RTX 4060 Laptop GPU)
+[2026-10-05 00:10:16] [INFO] [train.py:59] Starting training for 30 epochs on 3500 train samples, 750 val samples.
+[2026-10-05 00:47:09] [INFO] [run_single_experiment.py:162] ==================================================================
+[2026-10-05 00:47:09] [INFO] [run_single_experiment.py:163]              RUNNING EXPERIMENT: ABL-2                   
+[2026-10-05 00:47:09] [INFO] [run_single_experiment.py:164] ==================================================================
+[2026-10-05 00:47:09] [INFO] [run_single_experiment.py:167] Device: cuda (NVIDIA GeForce RTX 4060 Laptop GPU)
+[2026-10-05 00:47:09] [INFO] [run_single_experiment.py:173] Model: CDTCNetAblationA2 | Frequency: fft
+[2026-10-05 00:47:09] [INFO] [run_single_experiment.py:174] Total Params: 30,491,137 | Trainable Params: 2,672,545
+[2026-10-05 00:47:09] [INFO] [run_single_experiment.py:201] Loaded train: 3500 samples | val: 750 samples
+[2026-10-05 00:47:09] [INFO] [train.py:58] Using device: cuda (NVIDIA GeForce RTX 4060 Laptop GPU)
+[2026-10-05 00:47:09] [INFO] [train.py:59] Starting training for 30 epochs on 3500 train samples, 750 val samples.
+[2026-10-05 00:49:44] [INFO] [train.py:124] Epoch 01/30 | Train Loss: 0.5106 | Val Loss: 0.4998 | Val Acc: 0.8000 | Val Bal Acc: 0.5000 | Val F1: 0.8889 | Val AUC: 0.5564 | LR: 9.97e-05 | Time: 154.4s
+[2026-10-05 00:51:45] [INFO] [train.py:124] Epoch 02/30 | Train Loss: 0.5067 | Val Loss: 0.5025 | Val Acc: 0.8000 | Val Bal Acc: 0.5000 | Val F1: 0.8889 | Val AUC: 0.5643 | LR: 9.89e-05 | Time: 120.5s
+[2026-10-05 00:53:46] [INFO] [train.py:124] Epoch 03/30 | Train Loss: 0.5066 | Val Loss: 0.4993 | Val Acc: 0.8000 | Val Bal Acc: 0.5000 | Val F1: 0.8889 | Val AUC: 0.6106 | LR: 9.76e-05 | Time: 121.1s
+[2026-10-05 00:55:47] [INFO] [train.py:124] Epoch 04/30 | Train Loss: 0.5035 | Val Loss: 0.4884 | Val Acc: 0.8000 | Val Bal Acc: 0.5000 | Val F1: 0.8889 | Val AUC: 0.6624 | LR: 9.57e-05 | Time: 120.8s
+[2026-10-05 00:57:49] [INFO] [train.py:124] Epoch 05/30 | Train Loss: 0.4983 | Val Loss: 0.4805 | Val Acc: 0.8000 | Val Bal Acc: 0.5000 | Val F1: 0.8889 | Val AUC: 0.6502 | LR: 9.34e-05 | Time: 121.3s
+[2026-10-05 00:59:50] [INFO] [train.py:124] Epoch 06/30 | Train Loss: 0.4814 | Val Loss: 0.4716 | Val Acc: 0.8000 | Val Bal Acc: 0.5350 | Val F1: 0.8865 | Val AUC: 0.7004 | LR: 9.05e-05 | Time: 120.9s
+[2026-10-05 01:01:51] [INFO] [train.py:124] Epoch 07/30 | Train Loss: 0.4691 | Val Loss: 0.4511 | Val Acc: 0.7987 | Val Bal Acc: 0.6167 | Val F1: 0.8797 | Val AUC: 0.7402 | LR: 8.73e-05 | Time: 121.2s
+[2026-10-05 01:03:53] [INFO] [train.py:124] Epoch 08/30 | Train Loss: 0.4575 | Val Loss: 0.4343 | Val Acc: 0.8107 | Val Bal Acc: 0.5692 | Val F1: 0.8914 | Val AUC: 0.7480 | LR: 8.36e-05 | Time: 121.2s
+[2026-10-05 01:05:54] [INFO] [train.py:124] Epoch 09/30 | Train Loss: 0.4452 | Val Loss: 0.4375 | Val Acc: 0.8093 | Val Bal Acc: 0.5933 | Val F1: 0.8889 | Val AUC: 0.7565 | LR: 7.96e-05 | Time: 121.3s
+[2026-10-05 01:07:56] [INFO] [train.py:124] Epoch 10/30 | Train Loss: 0.4337 | Val Loss: 0.4345 | Val Acc: 0.8173 | Val Bal Acc: 0.6483 | Val F1: 0.8907 | Val AUC: 0.7628 | LR: 7.52e-05 | Time: 121.2s
+[2026-10-05 01:09:57] [INFO] [train.py:124] Epoch 11/30 | Train Loss: 0.4256 | Val Loss: 0.4948 | Val Acc: 0.7813 | Val Bal Acc: 0.6258 | Val F1: 0.8662 | Val AUC: 0.7433 | LR: 7.06e-05 | Time: 121.3s
+[2026-10-05 01:11:59] [INFO] [train.py:124] Epoch 12/30 | Train Loss: 0.4208 | Val Loss: 0.4769 | Val Acc: 0.8160 | Val Bal Acc: 0.5725 | Val F1: 0.8948 | Val AUC: 0.7367 | LR: 6.58e-05 | Time: 121.2s
+[2026-10-05 01:14:00] [INFO] [train.py:124] Epoch 13/30 | Train Loss: 0.4022 | Val Loss: 0.5274 | Val Acc: 0.7707 | Val Bal Acc: 0.6617 | Val F1: 0.8547 | Val AUC: 0.7552 | LR: 6.08e-05 | Time: 121.1s
+[2026-10-05 01:16:01] [INFO] [train.py:124] Epoch 14/30 | Train Loss: 0.4007 | Val Loss: 0.4934 | Val Acc: 0.8013 | Val Bal Acc: 0.6483 | Val F1: 0.8792 | Val AUC: 0.7557 | LR: 5.57e-05 | Time: 121.3s
+[2026-10-05 01:18:03] [INFO] [train.py:124] Epoch 15/30 | Train Loss: 0.3989 | Val Loss: 0.4869 | Val Acc: 0.7880 | Val Bal Acc: 0.6150 | Val F1: 0.8721 | Val AUC: 0.7504 | LR: 5.05e-05 | Time: 121.1s
+[2026-10-05 01:18:03] [INFO] [train.py:167] Early stopping triggered after 15 epochs (no improvement for 5 epochs).
+[2026-10-05 01:18:03] [INFO] [train.py:170] Training completed. Best Val AUC: 0.7628
+[2026-10-05 01:18:32] [INFO] [run_single_experiment.py:276] ==================================================================
+[2026-10-05 01:18:32] [INFO] [run_single_experiment.py:277]          EXPERIMENT ABL-2 COMPLETED SUCCESSFULLY          
+[2026-10-05 01:18:32] [INFO] [run_single_experiment.py:278]  Test Accuracy:         0.7840
+[2026-10-05 01:18:32] [INFO] [run_single_experiment.py:279]  Test Balanced Accuracy:0.6325
+[2026-10-05 01:18:32] [INFO] [run_single_experiment.py:280]  Test Precision:        0.8510
+[2026-10-05 01:18:32] [INFO] [run_single_experiment.py:281]  Test Recall:           0.8850
+[2026-10-05 01:18:32] [INFO] [run_single_experiment.py:282]  Test F1-Score:         0.8676
+[2026-10-05 01:18:32] [INFO] [run_single_experiment.py:283]  Test ROC-AUC:          0.7205
+[2026-10-05 01:18:32] [INFO] [run_single_experiment.py:284] ==================================================================

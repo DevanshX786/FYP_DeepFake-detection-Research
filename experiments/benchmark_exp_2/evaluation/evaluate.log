@@ -1,0 +1,8 @@
+[2026-10-04 17:51:36] [INFO] [evaluate.py:52] Loading checkpoint from: experiments/benchmark_exp_2\checkpoints\best_model.pt
+[2026-10-04 17:51:36] [INFO] [evaluate.py:60] Evaluating EXP-2 on 750 test samples from: data/splits/test.csv
+[2026-10-04 17:53:12] [INFO] [evaluate.py:103] Test Accuracy: 0.8000
+[2026-10-04 17:53:12] [INFO] [evaluate.py:104] Test Precision: 0.8000
+[2026-10-04 17:53:12] [INFO] [evaluate.py:105] Test Recall:    1.0000
+[2026-10-04 17:53:12] [INFO] [evaluate.py:106] Test F1-score:  0.8889
+[2026-10-04 17:53:12] [INFO] [evaluate.py:107] Test ROC-AUC:   0.5883
+[2026-10-04 17:53:12] [INFO] [evaluate.py:123] Evaluation complete. Artifacts saved to: experiments/benchmark_exp_2\evaluation

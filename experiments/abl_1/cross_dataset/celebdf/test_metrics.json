@@ -1,0 +1,35 @@
+{
+    "exp_id": "ABL-1",
+    "model_name": "Dual-Domain + Avg Pooling",
+    "checkpoint_path": "experiments/abl_1/checkpoints/best_model.pt",
+    "checkpoint_epoch": 10,
+    "test_dataset": "data/splits/celebdf_test.csv",
+    "dataset_name": "Celeb-DF v2 (Zero-Shot)",
+    "overall_metrics": {
+        "accuracy": 0.6698841698841699,
+        "balanced_accuracy": 0.586582947785856,
+        "precision": 0.7055961070559611,
+        "recall": 0.8529411764705882,
+        "f1": 0.7723035952063915,
+        "roc_auc": 0.6644084600132187,
+        "true_negatives": 57,
+        "false_positives": 121,
+        "false_negatives": 50,
+        "true_positives": 290,
+        "test_loss": 0.6295774269518245
+    },
+    "per_manipulation_method_metrics": {
+        "celeb_synthesis": {
+            "accuracy": 0.6698841698841699,
+            "balanced_accuracy": 0.586582947785856,
+            "precision": 0.7055961070559611,
+            "recall": 0.8529411764705882,
+            "f1": 0.7723035952063915,
+            "roc_auc": 0.6644084600132187,
+            "true_negatives": 57,
+            "false_positives": 121,
+            "false_negatives": 50,
+            "true_positives": 290
+        }
+    }
+}

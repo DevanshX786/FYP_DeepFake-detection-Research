@@ -1,0 +1,35 @@
+# Dataset Configuration
+primary_dataset: "faceforensics++"
+compression: "c23"
+
+# Data paths (can be overridden via CLI args or environment)
+raw_data_dir: "data/raw/faceforensics"
+processed_data_dir: "data/processed"
+metadata_path: "data/metadata/ffpp_metadata.csv"
+splits_dir: "data/splits"
+
+# Sampling & Preprocessing
+frames_per_video: 16
+image_size: 224
+sampling_strategy: "uniform"  # "uniform", "random" (train), "deterministic" (val/test)
+
+# Label mapping
+label_mapping:
+  real: 0
+  fake: 1
+
+# Dataset Splits
+train_ratio: 0.70
+val_ratio: 0.15
+test_ratio: 0.15
+split_seed: 42
+
+# Face detector settings
+face_detector: "mtcnn"  # "mtcnn", "retinaface", or "opencv"
+face_crop_margin: 0.15
+fallback_strategy: "center_crop"  # "center_crop", "previous_box", "full_frame"
+
+# External Evaluation Dataset
+external_dataset: "celeb_df"
+celebdf_raw_dir: "data/raw/celebdf"
+celebdf_metadata_path: "data/metadata/celebdf_metadata.csv"

@@ -1,0 +1,89 @@
+{
+    "device": "cuda",
+    "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "peak_vram_mb": 981.8173828125,
+    "current_vram_mb": 196.8154296875,
+    "nan_detected": false,
+    "exploding_gradients": true,
+    "total_train_time_sec": 412.9453902244568,
+    "overall_throughput_vids_per_sec": 0.48432554215289786,
+    "initial_metrics": {
+        "accuracy": 0.36,
+        "precision": 0.8333333333333334,
+        "recall": 0.25,
+        "f1": 0.38461538461538464,
+        "roc_auc": 0.42999999999999994,
+        "true_negatives": 4,
+        "false_positives": 1,
+        "false_negatives": 15,
+        "true_positives": 5,
+        "val_loss": 0.7214705729484558
+    },
+    "epoch_progression": [
+        {
+            "epoch": 1,
+            "train_loss": 0.5291441798210144,
+            "val_loss": 0.5127536350488663,
+            "accuracy": 0.8,
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1": 0.8888888888888888,
+            "roc_auc": 0.42999999999999994,
+            "avg_grad_norm": Infinity,
+            "epoch_time_sec": 104.78266310691833,
+            "throughput_samples_per_sec": 0.4771781754485559
+        },
+        {
+            "epoch": 2,
+            "train_loss": 0.5612118983268738,
+            "val_loss": 0.5783868435025216,
+            "accuracy": 0.8,
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1": 0.8888888888888888,
+            "roc_auc": 0.32999999999999996,
+            "avg_grad_norm": 3.3679175762484284,
+            "epoch_time_sec": 101.7020332813263,
+            "throughput_samples_per_sec": 0.49163225539150157
+        },
+        {
+            "epoch": 3,
+            "train_loss": 0.5696027529239654,
+            "val_loss": 0.5915856567025185,
+            "accuracy": 0.8,
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1": 0.8888888888888888,
+            "roc_auc": 0.32999999999999996,
+            "avg_grad_norm": 3.0651872662984525,
+            "epoch_time_sec": 99.38082718849182,
+            "throughput_samples_per_sec": 0.503115152233206
+        },
+        {
+            "epoch": 4,
+            "train_loss": 0.5999275043606758,
+            "val_loss": 0.6457183894515037,
+            "accuracy": 0.8,
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1": 0.8888888888888888,
+            "roc_auc": 0.33999999999999997,
+            "avg_grad_norm": 2.764503403162348,
+            "epoch_time_sec": 107.07986664772034,
+            "throughput_samples_per_sec": 0.46694118666111045
+        }
+    ],
+    "final_epoch_metrics": {
+        "epoch": 4,
+        "train_loss": 0.5999275043606758,
+        "val_loss": 0.6457183894515037,
+        "accuracy": 0.8,
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.8888888888888888,
+        "roc_auc": 0.33999999999999997,
+        "avg_grad_norm": 2.764503403162348,
+        "epoch_time_sec": 107.07986664772034,
+        "throughput_samples_per_sec": 0.46694118666111045
+    }
+}

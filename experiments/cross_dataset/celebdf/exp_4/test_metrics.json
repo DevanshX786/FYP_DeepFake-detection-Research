@@ -1,0 +1,35 @@
+{
+    "exp_id": "EXP-4",
+    "model_name": "Frequency-only (2D-FFT)",
+    "checkpoint_path": "experiments/exp_4/checkpoints/best_model.pt",
+    "checkpoint_epoch": 11,
+    "test_dataset": "data/splits/celebdf_test.csv",
+    "dataset_name": "Celeb-DF v2 (Zero-Shot)",
+    "overall_metrics": {
+        "accuracy": 0.6563706563706564,
+        "balanced_accuracy": 0.5,
+        "precision": 0.6563706563706564,
+        "recall": 1.0,
+        "f1": 0.7925407925407926,
+        "roc_auc": 0.5116077329808328,
+        "true_negatives": 0,
+        "false_positives": 178,
+        "false_negatives": 0,
+        "true_positives": 340,
+        "test_loss": 0.7364911623442956
+    },
+    "per_manipulation_method_metrics": {
+        "celeb_synthesis": {
+            "accuracy": 0.6563706563706564,
+            "balanced_accuracy": 0.5,
+            "precision": 0.6563706563706564,
+            "recall": 1.0,
+            "f1": 0.7925407925407926,
+            "roc_auc": 0.5116077329808328,
+            "true_negatives": 0,
+            "false_positives": 178,
+            "false_negatives": 0,
+            "true_positives": 340
+        }
+    }
+}

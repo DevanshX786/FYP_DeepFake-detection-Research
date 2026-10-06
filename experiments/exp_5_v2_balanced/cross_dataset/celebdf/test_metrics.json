@@ -1,0 +1,33 @@
+{
+    "model_name": "EXP-5-V2-BALANCED",
+    "checkpoint_path": "experiments/exp_5_v2_balanced\\checkpoints\\best_model.pt",
+    "test_dataset": "data/splits/celebdf_test.csv",
+    "calibrated_threshold": 0.65,
+    "overall_metrics": {
+        "accuracy": 0.583011583011583,
+        "balanced_accuracy": 0.6234633179114342,
+        "precision": 0.7924528301886793,
+        "recall": 0.49411764705882355,
+        "f1": 0.6086956521739131,
+        "roc_auc": 0.6778916060806345,
+        "true_negatives": 134,
+        "false_positives": 44,
+        "false_negatives": 172,
+        "true_positives": 168,
+        "specificity": 0.7528089887640449
+    },
+    "per_manipulation_method_metrics": {
+        "celeb_synthesis": {
+            "accuracy": 0.583011583011583,
+            "balanced_accuracy": 0.6234633179114342,
+            "precision": 0.7924528301886793,
+            "recall": 0.49411764705882355,
+            "f1": 0.6086956521739131,
+            "roc_auc": 0.6778916060806345,
+            "true_negatives": 134,
+            "false_positives": 44,
+            "false_negatives": 172,
+            "true_positives": 168
+        }
+    }
+}

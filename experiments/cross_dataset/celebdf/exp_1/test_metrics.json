@@ -1,0 +1,35 @@
+{
+    "exp_id": "EXP-1",
+    "model_name": "ResNet-50 + BiLSTM",
+    "checkpoint_path": "experiments/exp_1/checkpoints/best_model.pt",
+    "checkpoint_epoch": 25,
+    "test_dataset": "data/splits/celebdf_test.csv",
+    "dataset_name": "Celeb-DF v2 (Zero-Shot)",
+    "overall_metrics": {
+        "accuracy": 0.7239382239382239,
+        "balanced_accuracy": 0.659881031064111,
+        "precision": 0.7519181585677749,
+        "recall": 0.8647058823529412,
+        "f1": 0.8043775649794802,
+        "roc_auc": 0.7270654329147389,
+        "true_negatives": 81,
+        "false_positives": 97,
+        "false_negatives": 46,
+        "true_positives": 294,
+        "test_loss": 0.8623434010332155
+    },
+    "per_manipulation_method_metrics": {
+        "celeb_synthesis": {
+            "accuracy": 0.7239382239382239,
+            "balanced_accuracy": 0.659881031064111,
+            "precision": 0.7519181585677749,
+            "recall": 0.8647058823529412,
+            "f1": 0.8043775649794802,
+            "roc_auc": 0.7270654329147389,
+            "true_negatives": 81,
+            "false_positives": 97,
+            "false_negatives": 46,
+            "true_positives": 294
+        }
+    }
+}

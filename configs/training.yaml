@@ -1,0 +1,42 @@
+# Training Configuration
+experiment_name: "cdtc_ffpp_c23_default"
+seed: 42
+
+# Optimization
+optimizer:
+  type: "AdamW"
+  lr: 0.0001
+  weight_decay: 0.01
+  betas: [0.9, 0.999]
+
+# Scheduler
+scheduler:
+  type: "cosine"  # "cosine", "step", "plateau"
+  warmup_epochs: 3
+  min_lr: 0.000001
+
+# Loss
+loss:
+  type: "BCEWithLogitsLoss"
+  pos_weight: null  # Optional class balance weighting
+
+# Training Hyperparameters
+epochs: 30
+batch_size: 8  # Adjusted per VRAM availability
+gradient_accumulation_steps: 1
+num_workers: 4
+mixed_precision: true  # FP16 / AMP
+gradient_clip_val: 1.0
+
+# Early Stopping & Checkpointing
+early_stopping:
+  enabled: true
+  patience: 5
+  monitor: "val_loss"
+  mode: "min"
+
+checkpointing:
+  save_best_only: true
+  monitor: "val_auc"
+  mode: "max"
+  dir: "experiments"

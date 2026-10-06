@@ -1,0 +1,18 @@
+{
+    "exp_id": "ABL-1",
+    "model_class": "CDTCNetAblationA1",
+    "freq_method": "fft",
+    "seed": 42,
+    "epochs": 30,
+    "batch_size": 8,
+    "lr": 0.0001,
+    "weight_decay": 0.01,
+    "freeze_backbone": true,
+    "num_frames": 16,
+    "device": "cuda",
+    "total_params": 29419777,
+    "trainable_params": 1601185,
+    "train_split": "data/splits/train.csv",
+    "val_split": "data/splits/val.csv",
+    "test_split": "data/splits/test.csv"
+}

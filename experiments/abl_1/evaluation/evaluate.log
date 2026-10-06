@@ -1,0 +1,8 @@
+[2026-10-05 00:46:26] [INFO] [evaluate.py:52] Loading checkpoint from: experiments/abl_1\checkpoints\best_model.pt
+[2026-10-05 00:46:27] [INFO] [evaluate.py:60] Evaluating ABL-1 on 750 test samples from: data/splits/test.csv
+[2026-10-05 00:46:54] [INFO] [evaluate.py:104] Test Accuracy: 0.7493
+[2026-10-05 00:46:54] [INFO] [evaluate.py:105] Test Precision: 0.8640
+[2026-10-05 00:46:54] [INFO] [evaluate.py:106] Test Recall:    0.8150
+[2026-10-05 00:46:54] [INFO] [evaluate.py:107] Test F1-score:  0.8388
+[2026-10-05 00:46:54] [INFO] [evaluate.py:108] Test ROC-AUC:   0.7264
+[2026-10-05 00:46:55] [INFO] [evaluate.py:124] Evaluation complete. Artifacts saved to: experiments/abl_1\evaluation

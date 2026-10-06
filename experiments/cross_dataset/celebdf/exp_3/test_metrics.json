@@ -1,0 +1,35 @@
+{
+    "exp_id": "EXP-3",
+    "model_name": "ConvNeXt RGB + Transformer",
+    "checkpoint_path": "experiments/exp_3/checkpoints/best_model.pt",
+    "checkpoint_epoch": 10,
+    "test_dataset": "data/splits/celebdf_test.csv",
+    "dataset_name": "Celeb-DF v2 (Zero-Shot)",
+    "overall_metrics": {
+        "accuracy": 0.6872586872586872,
+        "balanced_accuracy": 0.5877726371447456,
+        "precision": 0.7031963470319634,
+        "recall": 0.9058823529411765,
+        "f1": 0.7917737789203085,
+        "roc_auc": 0.7089309319233311,
+        "true_negatives": 48,
+        "false_positives": 130,
+        "false_negatives": 32,
+        "true_positives": 308,
+        "test_loss": 0.6436910083855442
+    },
+    "per_manipulation_method_metrics": {
+        "celeb_synthesis": {
+            "accuracy": 0.6872586872586872,
+            "balanced_accuracy": 0.5877726371447456,
+            "precision": 0.7031963470319634,
+            "recall": 0.9058823529411765,
+            "f1": 0.7917737789203085,
+            "roc_auc": 0.7089309319233311,
+            "true_negatives": 48,
+            "false_positives": 130,
+            "false_negatives": 32,
+            "true_positives": 308
+        }
+    }
+}

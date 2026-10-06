@@ -1,0 +1,68 @@
+{
+    "model_name": "frequency_only",
+    "checkpoint_path": "experiments/exp_4/checkpoints/best_model.pt",
+    "test_dataset": "data/splits/test.csv",
+    "overall_metrics": {
+        "accuracy": 0.8,
+        "balanced_accuracy": 0.5,
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.8888888888888888,
+        "roc_auc": 0.6435833333333334,
+        "true_negatives": 0,
+        "false_positives": 150,
+        "false_negatives": 0,
+        "true_positives": 600,
+        "test_loss": 0.4849891713857651
+    },
+    "per_manipulation_method_metrics": {
+        "deepfakes": {
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666,
+            "roc_auc": 0.7526888888888887,
+            "true_negatives": 0,
+            "false_positives": 150,
+            "false_negatives": 0,
+            "true_positives": 150
+        },
+        "face2face": {
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666,
+            "roc_auc": 0.5987555555555555,
+            "true_negatives": 0,
+            "false_positives": 150,
+            "false_negatives": 0,
+            "true_positives": 150
+        },
+        "faceswap": {
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666,
+            "roc_auc": 0.5861999999999999,
+            "true_negatives": 0,
+            "false_positives": 150,
+            "false_negatives": 0,
+            "true_positives": 150
+        },
+        "neuraltextures": {
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666,
+            "roc_auc": 0.6366888888888889,
+            "true_negatives": 0,
+            "false_positives": 150,
+            "false_negatives": 0,
+            "true_positives": 150
+        }
+    }
+}

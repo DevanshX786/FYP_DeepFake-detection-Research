@@ -1,0 +1,36 @@
+[2026-10-04 22:12:49] [INFO] [run_single_experiment.py:162] ==================================================================
+[2026-10-04 22:12:49] [INFO] [run_single_experiment.py:163]              RUNNING EXPERIMENT: EXP-4                   
+[2026-10-04 22:12:49] [INFO] [run_single_experiment.py:164] ==================================================================
+[2026-10-04 22:12:49] [INFO] [run_single_experiment.py:167] Device: cuda (NVIDIA GeForce RTX 4060 Laptop GPU)
+[2026-10-04 22:12:49] [INFO] [run_single_experiment.py:173] Model: FrequencyOnlyModel | Frequency: fft
+[2026-10-04 22:12:49] [INFO] [run_single_experiment.py:174] Total Params: 1,271,969 | Trainable Params: 1,271,969
+[2026-10-04 22:12:49] [INFO] [run_single_experiment.py:201] Loaded train: 3500 samples | val: 750 samples
+[2026-10-04 22:12:49] [INFO] [train.py:58] Using device: cuda (NVIDIA GeForce RTX 4060 Laptop GPU)
+[2026-10-04 22:12:49] [INFO] [train.py:59] Starting training for 30 epochs on 3500 train samples, 750 val samples.
+[2026-10-04 22:19:00] [INFO] [run_single_experiment.py:162] ==================================================================
+[2026-10-04 22:19:00] [INFO] [run_single_experiment.py:163]              RUNNING EXPERIMENT: EXP-4                   
+[2026-10-04 22:19:00] [INFO] [run_single_experiment.py:164] ==================================================================
+[2026-10-04 22:19:00] [INFO] [run_single_experiment.py:167] Device: cuda (NVIDIA GeForce RTX 4060 Laptop GPU)
+[2026-10-04 22:19:00] [INFO] [run_single_experiment.py:173] Model: FrequencyOnlyModel | Frequency: fft
+[2026-10-04 22:19:00] [INFO] [run_single_experiment.py:174] Total Params: 1,271,969 | Trainable Params: 1,271,969
+[2026-10-04 22:19:00] [INFO] [run_single_experiment.py:201] Loaded train: 3500 samples | val: 750 samples
+[2026-10-04 22:19:00] [INFO] [train.py:58] Using device: cuda (NVIDIA GeForce RTX 4060 Laptop GPU)
+[2026-10-04 22:19:00] [INFO] [train.py:59] Starting training for 30 epochs on 3500 train samples, 750 val samples.
+[2026-10-04 22:21:38] [INFO] [train.py:124] Epoch 01/30 | Train Loss: 0.5085 | Val Loss: 0.4986 | Val Acc: 0.8000 | Val Bal Acc: 0.5000 | Val F1: 0.8889 | Val AUC: 0.5563 | LR: 9.97e-05 | Time: 157.6s
+[2026-10-04 22:23:20] [INFO] [train.py:124] Epoch 02/30 | Train Loss: 0.5014 | Val Loss: 0.4978 | Val Acc: 0.8000 | Val Bal Acc: 0.5000 | Val F1: 0.8889 | Val AUC: 0.5600 | LR: 9.89e-05 | Time: 101.5s
+[2026-10-04 22:25:08] [INFO] [train.py:124] Epoch 03/30 | Train Loss: 0.4999 | Val Loss: 0.4903 | Val Acc: 0.8000 | Val Bal Acc: 0.5000 | Val F1: 0.8889 | Val AUC: 0.6105 | LR: 9.76e-05 | Time: 107.9s
+[2026-10-04 22:26:57] [INFO] [train.py:124] Epoch 04/30 | Train Loss: 0.5003 | Val Loss: 0.5167 | Val Acc: 0.8000 | Val Bal Acc: 0.5000 | Val F1: 0.8889 | Val AUC: 0.5594 | LR: 9.57e-05 | Time: 109.4s
+[2026-10-04 22:28:45] [INFO] [train.py:124] Epoch 05/30 | Train Loss: 0.4980 | Val Loss: 0.5004 | Val Acc: 0.8000 | Val Bal Acc: 0.5000 | Val F1: 0.8889 | Val AUC: 0.5659 | LR: 9.34e-05 | Time: 107.6s
+[2026-10-04 22:30:34] [INFO] [train.py:124] Epoch 06/30 | Train Loss: 0.4995 | Val Loss: 0.4949 | Val Acc: 0.8000 | Val Bal Acc: 0.5000 | Val F1: 0.8889 | Val AUC: 0.6189 | LR: 9.05e-05 | Time: 109.8s
+[2026-10-04 22:32:20] [INFO] [train.py:124] Epoch 07/30 | Train Loss: 0.4978 | Val Loss: 0.5010 | Val Acc: 0.8000 | Val Bal Acc: 0.5000 | Val F1: 0.8889 | Val AUC: 0.6043 | LR: 8.73e-05 | Time: 106.0s
+[2026-10-04 22:34:09] [INFO] [train.py:124] Epoch 08/30 | Train Loss: 0.4943 | Val Loss: 0.4880 | Val Acc: 0.8000 | Val Bal Acc: 0.5000 | Val F1: 0.8889 | Val AUC: 0.6129 | LR: 8.36e-05 | Time: 108.2s
+[2026-10-04 22:35:58] [INFO] [train.py:124] Epoch 09/30 | Train Loss: 0.4963 | Val Loss: 0.4891 | Val Acc: 0.8000 | Val Bal Acc: 0.5000 | Val F1: 0.8889 | Val AUC: 0.6123 | LR: 7.96e-05 | Time: 109.7s
+[2026-10-04 22:37:45] [INFO] [train.py:124] Epoch 10/30 | Train Loss: 0.4934 | Val Loss: 0.5040 | Val Acc: 0.8000 | Val Bal Acc: 0.5000 | Val F1: 0.8889 | Val AUC: 0.6044 | LR: 7.52e-05 | Time: 107.0s
+[2026-10-04 22:39:34] [INFO] [train.py:124] Epoch 11/30 | Train Loss: 0.4873 | Val Loss: 0.4900 | Val Acc: 0.8000 | Val Bal Acc: 0.5000 | Val F1: 0.8889 | Val AUC: 0.6219 | LR: 7.06e-05 | Time: 108.7s
+[2026-10-04 22:41:21] [INFO] [train.py:124] Epoch 12/30 | Train Loss: 0.4870 | Val Loss: 0.5004 | Val Acc: 0.8000 | Val Bal Acc: 0.5000 | Val F1: 0.8889 | Val AUC: 0.6168 | LR: 6.58e-05 | Time: 107.1s
+[2026-10-04 22:43:19] [INFO] [train.py:124] Epoch 13/30 | Train Loss: 0.4819 | Val Loss: 0.5017 | Val Acc: 0.8000 | Val Bal Acc: 0.5000 | Val F1: 0.8889 | Val AUC: 0.6089 | LR: 6.08e-05 | Time: 117.8s
+[2026-10-04 22:45:13] [INFO] [train.py:124] Epoch 14/30 | Train Loss: 0.4736 | Val Loss: 0.5542 | Val Acc: 0.8000 | Val Bal Acc: 0.5000 | Val F1: 0.8889 | Val AUC: 0.6078 | LR: 5.57e-05 | Time: 113.8s
+[2026-10-04 22:47:03] [INFO] [train.py:124] Epoch 15/30 | Train Loss: 0.4499 | Val Loss: 0.5275 | Val Acc: 0.8000 | Val Bal Acc: 0.5050 | Val F1: 0.8886 | Val AUC: 0.5912 | LR: 5.05e-05 | Time: 110.4s
+[2026-10-04 22:48:53] [INFO] [train.py:124] Epoch 16/30 | Train Loss: 0.3940 | Val Loss: 0.5470 | Val Acc: 0.7973 | Val Bal Acc: 0.5258 | Val F1: 0.8854 | Val AUC: 0.5912 | LR: 4.53e-05 | Time: 109.4s
+[2026-10-04 22:48:53] [INFO] [train.py:167] Early stopping triggered after 16 epochs (no improvement for 5 epochs).
+[2026-10-04 22:48:53] [INFO] [train.py:170] Training completed. Best Val AUC: 0.6219

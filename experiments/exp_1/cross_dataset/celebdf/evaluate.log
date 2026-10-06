@@ -1,0 +1,11 @@
+[2026-10-06 10:50:29] [INFO] [run_celebdf_evaluation.py:59] ==================================================================
+[2026-10-06 10:50:29] [INFO] [run_celebdf_evaluation.py:60]     ZERO-SHOT CELEB-DF EVALUATION: EXP-1 (ResNet-50 + BiLSTM)   
+[2026-10-06 10:50:29] [INFO] [run_celebdf_evaluation.py:61] ==================================================================
+[2026-10-06 10:50:29] [INFO] [run_celebdf_evaluation.py:62] Checkpoint: experiments/exp_1/checkpoints/best_model.pt
+[2026-10-06 10:50:30] [INFO] [run_celebdf_evaluation.py:75] Successfully loaded checkpoint from epoch 25
+[2026-10-06 10:50:50] [INFO] [run_celebdf_evaluation.py:121] Accuracy:          0.7239
+[2026-10-06 10:50:50] [INFO] [run_celebdf_evaluation.py:122] Balanced Accuracy: 0.6599
+[2026-10-06 10:50:50] [INFO] [run_celebdf_evaluation.py:123] Precision:         0.7519
+[2026-10-06 10:50:50] [INFO] [run_celebdf_evaluation.py:124] Recall:            0.8647
+[2026-10-06 10:50:50] [INFO] [run_celebdf_evaluation.py:125] F1-score:          0.8044
+[2026-10-06 10:50:50] [INFO] [run_celebdf_evaluation.py:126] ROC-AUC:           0.7271

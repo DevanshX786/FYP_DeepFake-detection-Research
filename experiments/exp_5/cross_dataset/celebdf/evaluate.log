@@ -1,0 +1,11 @@
+[2026-10-06 10:51:55] [INFO] [run_celebdf_evaluation.py:59] ==================================================================
+[2026-10-06 10:51:55] [INFO] [run_celebdf_evaluation.py:60]     ZERO-SHOT CELEB-DF EVALUATION: EXP-5 (Full Proposed CDTC-Net)   
+[2026-10-06 10:51:55] [INFO] [run_celebdf_evaluation.py:61] ==================================================================
+[2026-10-06 10:51:55] [INFO] [run_celebdf_evaluation.py:62] Checkpoint: experiments/exp_5/checkpoints/best_model.pt
+[2026-10-06 10:51:56] [INFO] [run_celebdf_evaluation.py:75] Successfully loaded checkpoint from epoch 11
+[2026-10-06 10:52:18] [INFO] [run_celebdf_evaluation.py:121] Accuracy:          0.6795
+[2026-10-06 10:52:18] [INFO] [run_celebdf_evaluation.py:122] Balanced Accuracy: 0.5471
+[2026-10-06 10:52:18] [INFO] [run_celebdf_evaluation.py:123] Precision:         0.6790
+[2026-10-06 10:52:18] [INFO] [run_celebdf_evaluation.py:124] Recall:            0.9706
+[2026-10-06 10:52:18] [INFO] [run_celebdf_evaluation.py:125] F1-score:          0.7990
+[2026-10-06 10:52:18] [INFO] [run_celebdf_evaluation.py:126] ROC-AUC:           0.6720

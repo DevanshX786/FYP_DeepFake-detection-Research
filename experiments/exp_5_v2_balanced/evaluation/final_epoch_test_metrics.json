@@ -1,0 +1,30 @@
+{
+    "model_name": "EXP-5-V2-BALANCED_FINAL_EPOCH_30",
+    "checkpoint_path": "experiments/exp_5_v2_balanced\\checkpoints\\final_model.pt",
+    "metrics_at_calibrated_threshold": {
+        "accuracy": 0.7386666666666667,
+        "balanced_accuracy": 0.6641666666666667,
+        "precision": 0.8726937269372693,
+        "recall": 0.7883333333333333,
+        "f1": 0.8283712784588442,
+        "roc_auc": 0.6997,
+        "true_negatives": 81,
+        "false_positives": 69,
+        "false_negatives": 127,
+        "true_positives": 473,
+        "specificity": 0.54
+    },
+    "metrics_at_default_threshold": {
+        "accuracy": 0.7453333333333333,
+        "balanced_accuracy": 0.6658333333333333,
+        "precision": 0.8724954462659381,
+        "recall": 0.7983333333333333,
+        "f1": 0.8337684943429069,
+        "roc_auc": 0.6997,
+        "true_negatives": 80,
+        "false_positives": 70,
+        "false_negatives": 121,
+        "true_positives": 479,
+        "specificity": 0.5333333333333333
+    }
+}

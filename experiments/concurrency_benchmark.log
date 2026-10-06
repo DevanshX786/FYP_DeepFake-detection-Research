@@ -1,0 +1,21 @@
+[2026-10-04 17:42:39] [INFO] [benchmark_concurrency.py:39] ==================================================================
+[2026-10-04 17:42:39] [INFO] [benchmark_concurrency.py:40]       CONTROLLED 2-EXPERIMENT CONCURRENCY BENCHMARK (GPU)         
+[2026-10-04 17:42:39] [INFO] [benchmark_concurrency.py:41] ==================================================================
+[2026-10-04 17:42:39] [INFO] [benchmark_concurrency.py:45] Target GPU: NVIDIA GeForce RTX 4060 Laptop GPU (8.00 GB VRAM)
+[2026-10-04 17:42:39] [INFO] [benchmark_concurrency.py:46] Test Setup: Concurrent execution of EXP-1 (ResNet-BiLSTM) and EXP-2 (RGB ConvNeXt)
+[2026-10-04 17:42:39] [INFO] [benchmark_concurrency.py:47] Parameters: 1 epoch(s), batch_size=8, num_workers=0
+[2026-10-04 17:42:39] [INFO] [benchmark_concurrency.py:77] Launched Process 1 (PID 27472: EXP-1) and Process 2 (PID 28076: EXP-2)...
+[2026-10-04 17:53:14] [INFO] [benchmark_concurrency.py:116] ==================================================================
+[2026-10-04 17:53:14] [INFO] [benchmark_concurrency.py:117]                BENCHMARK RESULTS & METRICS                        
+[2026-10-04 17:53:14] [INFO] [benchmark_concurrency.py:118] ==================================================================
+[2026-10-04 17:53:14] [INFO] [benchmark_concurrency.py:119]  Process 1 (EXP-1) Exit Code: 0
+[2026-10-04 17:53:14] [INFO] [benchmark_concurrency.py:120]  Process 2 (EXP-2) Exit Code: 0
+[2026-10-04 17:53:14] [INFO] [benchmark_concurrency.py:121]  Wall-clock Time (1 Epoch):  634.64 s (10.58 min)
+[2026-10-04 17:53:14] [INFO] [benchmark_concurrency.py:122]  Peak GPU VRAM:              5996.00 MB (5.86 GB / 8.00 GB)
+[2026-10-04 17:53:14] [INFO] [benchmark_concurrency.py:123]  Avg GPU VRAM:               4253.25 MB
+[2026-10-04 17:53:14] [INFO] [benchmark_concurrency.py:124]  Peak GPU Utilization:       100.0 %
+[2026-10-04 17:53:14] [INFO] [benchmark_concurrency.py:125]  Avg GPU Utilization:        81.8 %
+[2026-10-04 17:53:14] [INFO] [benchmark_concurrency.py:126]  Peak CPU Utilization:       37.3 %
+[2026-10-04 17:53:14] [INFO] [benchmark_concurrency.py:127]  Peak System RAM:            13.68 GB
+[2026-10-04 17:53:14] [INFO] [benchmark_concurrency.py:128]  Aggregate Throughput:       11.03 videos/sec (~176.5 frames/sec)
+[2026-10-04 17:53:14] [INFO] [benchmark_concurrency.py:129] ==================================================================
